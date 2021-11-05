@@ -4,14 +4,16 @@ use App\Http\Controllers\admin\AdminCalendarController;
 use App\Http\Controllers\admin\ContentCOntroller;
 use App\Http\Controllers\admin\StudentsController;
 use App\Http\Controllers\clerk\FinanceController;
+use App\Http\Controllers\CommonsController;
 use App\Http\Controllers\student\StudentAccountController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [CommonsController::class, 'index']);
 Route::get('/logoutchecked', function (Request $request) {
     $request->session()->flush();
     Auth::logout();

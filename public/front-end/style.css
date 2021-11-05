@@ -1,0 +1,3581 @@
+/*--------------------------------------------
+
+Template Name: Petter | Responsive HTML5 Template
+Template URI: https://radiustheme.com/
+Description: Petter | Responsive HTML5 Template which is used for Funeral Services.
+Author: Radius Theme
+Author URI: https://radiustheme.com/
+Version: 1.0
+
+===================    
+CSS INDEX
+===================
+
+01. Theme Default CSS (body, link color, section etc)  
+    01.1 Typography
+    01.2 Helper Classes  
+02. Header Area Start Here
+    02.1 Header Area Top Area Start
+    02.2 Main Header Area Start 
+    02.3 Mobile Menu Area Start 
+03. Slider Area Styling 
+04. Obituary Area Styling
+05. What We Do Area Styling
+06. About Us Area Styling
+07. Our Services Area Styling
+08. Expertise Area Styling 
+09. Staff Area Styling
+10. Talk About Area Styling 
+11. Partner Area Styling 
+12. Contact Area Styling
+13. Footer Area Styling 
+14. About Us Page Styling
+15. Our Obituaries Page Styling 
+16. Obituary Details Page Styling
+17. Services Page Styling
+18. Single Service Page Styling
+19. Online Store Page Styling
+20. Product Details Page Styling
+21. Our Staff Page Styling
+22. Single Staff Page Styling
+23. Contact Us Page Styling 
+24. 404 Error Page Styling 
+25. Other Elements Styling
+    25.1 Inner Page Header Banner Styling
+    25.2 Section Title Styling
+    25.3 Button Styling 
+    25.4 Pagination Styling
+26. ScrollUp Styling
+27. Preloader Styling 
+--------------------------------------------*/
+
+/*----------------------------------------
+01. Theme Default CSS (body, link color, section etc)
+/*----------------------------------------*/
+
+/*----------------------------------------
+01.1 Typography
+-----------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #646464;
+    vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 68px;
+}
+
+h2 {
+    color: #121212;
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    margin: 0 0 24px;
+    color: #646464;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #8ec93e;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+    outline: 0 none;
+}
+
+a:focus {
+    outline: 0px solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------
+01.2 Helper Classes
+-----------------------------------------*/
+
+.fix {
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.section-space {
+    padding: 100px 0;
+}
+
+.section-space-top {
+    padding: 100px 0 0 0;
+}
+
+.margin-top20 {
+    margin-top: 20px;
+}
+
+.margin-top30 {
+    margin-top: 30px;
+}
+
+.margin-top40 {
+    margin-top: 40px;
+}
+
+.margin-bottom0 {
+    margin-bottom: 0 !important;
+}
+
+.acurate {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-area {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+}
+
+/*----------------------------------------
+02. Header Area Start Here
+-----------------------------------------*/
+
+/*----------------------------------------
+02.1 Header Area Top Area Start 
+-----------------------------------------*/
+
+.header-area-top-area {
+    background: #333333;
+    padding: 8px 0 0 0;
+}
+
+.header-area-top-area .header-top-left p {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #dddddd;
+}
+
+.header-area-top-area .header-top-left p i {
+    color: #8ec93e;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+.header-area-top-area .header-top-right {
+    text-align: right;
+}
+
+.header-area-top-area .header-top-right nav ul li {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    color: #dddddd;
+}
+
+.header-area-top-area .header-top-right nav ul li a {
+    color: #dddddd;
+}
+
+.header-area-top-area .header-top-right nav ul li a:hover i,
+.header-area-top-area .header-top-right nav ul li a:focus i {
+    color: #57900a;
+}
+
+.header-area-top-area .header-top-right nav ul li:nth-child(1) {
+    border-right: 1px solid #ffffff;
+    padding-right: 10px;
+}
+
+.header-area-top-area .header-top-right nav ul li:nth-child(1) i {
+    padding-right: 5px;
+}
+
+.header-area-top-area .header-top-right nav ul li i {
+    color: #8ec93e;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+/*-------------------------------------
+02.2 Main Header Area Start 
+---------------------------------------*/
+
+.main-header-area .logo-area {
+    margin-top: 15px;
+}
+
+.main-header-area .main-menu-area nav>ul {
+    text-align: center;
+}
+
+.main-header-area .main-menu-area nav>ul>li {
+    display: inline-block;
+    position: relative;
+    padding: 33px 24px;
+}
+
+.main-header-area .main-menu-area nav>ul>.active>a {
+    color: #8ec93e;
+}
+
+.main-header-area .main-menu-area nav>ul>li>a {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    transition: all .3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #121212;
+    font-weight: 600;
+}
+
+.main-header-area .main-menu-area nav>ul>li>a:hover,
+.main-header-area .main-menu-area nav>ul>li>a:focus {
+    color: #8ec93e;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul {
+    text-align: left;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    width: 200px;
+    z-index: 99999;
+    background: #8ec93e;
+    visibility: hidden;
+}
+
+.mega-menu-area {
+    padding: 10px;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>li {
+    display: block;
+    border-bottom: 1px dashed #57900a;
+    margin: 0;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>li a:hover,
+.main-header-area .main-menu-area nav>ul>li>ul>li a:focus {
+    color: #57900a;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>li:last-child {
+    border-bottom: none;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>.active {
+    transition: 0.5s;
+    background: #57900a;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>li:hover,
+.main-header-area .main-menu-area nav>ul>li>ul>li a:focus {
+    transition: 0.5s;
+    background: #57900a;
+}
+
+.main-header-area .main-menu-area nav>ul>li>ul>li:hover a,
+.main-header-area .main-menu-area nav>ul>li>ul>li:focus a {
+    color: #ffffff;
+}
+
+.main-header-area .main-menu-area nav>ul>li:hover ul,
+.main-header-area .main-menu-area nav>ul>li:focus ul {
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area {
+    left: -310px;
+    width: 634px;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li {
+    border-bottom: none;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li:hover,
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li:focus {
+    background: transparent !important;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li:last-child {
+    margin-right: 0;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li ul li {
+    width: 193px;
+    border-bottom: 1px dashed #57900a;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li ul li:last-child {
+    border-bottom: 0;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li>ul>li>a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li>ul>.active>a {
+    background: #57900a;
+    color: #ffffff;
+}
+
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li>ul>li>a:hover,
+.main-header-area .main-menu-area nav>ul>li .mega-menu-area>li>ul>li>a:focus {
+    background: #57900a;
+    color: #ffffff;
+}
+
+.main-header-area .search-box {
+    padding-top: 32px;
+    position: relative;
+}
+
+.main-header-area .search-box>ul {
+    text-align: right;
+}
+
+.main-header-area .search-box>ul .shoping-bag {
+    padding-bottom: 34px;
+    padding-left: 10px;
+}
+
+.main-header-area .search-box>ul li {
+    display: inline-block;
+}
+
+.main-header-area .search-box>ul li form .search-form {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: -145px;
+    z-index: 10;
+    color: #111111;
+    font-size: 12px;
+    height: 35px;
+    background: #ffffff;
+    border: 1px solid #8ec93e;
+    padding: 5px 18px 5px 10px;
+    -webkit-box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, 0.4);
+    -moz-box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, 0.4);
+    box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, 0.4);
+}
+
+.main-header-area .search-box>ul li form a>i {
+    color: #b5b5b5;
+}
+
+.main-header-area .search-box>ul li form a>i:hover,
+.main-header-area .search-box>ul li form a>i:focus {
+    color: #8ec93e;
+}
+
+.main-header-area .search-box>ul li a>i {
+    font-size: 18px;
+    color: #646464;
+}
+
+.main-header-area .search-box>ul li span {
+    background: #8ec93e;
+    border-radius: 50%;
+    color: #ffffff;
+    height: 20px;
+    padding: 0 6px;
+    position: absolute;
+    top: 25px;
+    width: 20px;
+    font-size: 12px;
+    right: -10px;
+    line-height: 20px;
+}
+
+.main-header-area .search-box>ul li ul {
+    text-align: left;
+    background: #8ec93e;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    width: 250px;
+    z-index: 99999;
+}
+
+.main-header-area .search-box>ul li ul li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media {
+    position: relative;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-product-img img {
+    padding: 10px;
+    width: 80px;
+    min-height: 80px;
+    transition: all 0.5s;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-product-img img:hover {
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content h4 {
+    margin: 4px 0 0 0;
+    padding: 0;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content h4>a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content h4>a:hover,
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content h4>a:focus {
+    color: #121212;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content a.trash i {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    color: #ffffff;
+    top: 15px;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content a.trash i:hover,
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content a.trash i:focus {
+    color: #ff0000;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content .cart-product-price {
+    bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content .cart-product-price a {
+    border: 1px solid #ffffff;
+    background: #8ec93e;
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+    padding: 0 14px;
+    transition: all 0.5s;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content .cart-product-price a:hover,
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content .cart-product-price a:focus {
+    background: #ffffff;
+    color: #121212;
+    transition: 0.5s;
+}
+
+.main-header-area .search-box>ul li ul li .cart-single-product .media .cart-content p {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.main-header-area .search-box>ul li ul li a.checkout-button {
+    background: #8ec93e;
+    border: 1px solid #57900a;
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 5px 55px;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    transition: all .3s;
+}
+
+.main-header-area .search-box>ul li ul li a.checkout-button:hover,
+.main-header-area .search-box>ul li ul li a.checkout-button:focus {
+    transition: all 0.5s;
+    background: #57900a;
+    color: #000000;
+}
+
+.main-header-area .search-box>ul li ul li:hover,
+.main-header-area .search-box>ul li ul li:focus {
+    background: #57900a;
+    transition: 0.5s;
+}
+
+.main-header-area .search-box>ul li ul li:last-child {
+    border-bottom: none;
+}
+
+.main-header-area .search-box>ul li ul li:last-child:hover,
+.main-header-area .search-box>ul li ul li:last-child:focus {
+    background: none;
+}
+
+.main-header-area .search-box>ul li:hover ul,
+.main-header-area .search-box>ul li:focus ul {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#sticker {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.stick {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8) !important;
+    margin: 0;
+    border-bottom: 2px solid rgba(142, 201, 62, 0.5);
+}
+
+/*-------------------------------------
+02.3 Mobile Menu Area Start
+---------------------------------------*/
+
+.mobile-menu-area {
+    display: none;
+}
+
+.mobile-site-logo {
+    background: url(img/mob-logo.png) no-repeat;
+    padding: 15px 0;
+}
+
+/*-------------------------------------
+03. Slider Area Styling  
+---------------------------------------*/
+
+.slider-area {
+    margin-bottom: -25px;
+}
+
+.slider-area .big-title {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+    -webkit-animation: rollIn 1000ms ease-in-out;
+    -moz-animation: rollIn 1000ms ease-in-out;
+    -ms-animation: rollIn 1000ms ease-in-out;
+    animation: rollIn 1000ms ease-in-out;
+}
+
+.slider-area .small-content {
+    padding: 40px 200px 0 200px;
+    text-align: center;
+}
+
+.slider-area .small-content p {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 3px 0;
+}
+
+.slider-area .slider-2 .title1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider-area .button {
+    color: #d1d1d1;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 71%;
+    white-space: normal;
+}
+
+.slider-area .button .btn-success {
+    background-color: #8ec93e;
+    border-color: #8ec93e;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+
+.slider-area .button .btn-success:hover,
+.slider-area .button .btn-success:focus {
+    background-color: #57900a;
+    border-color: #57900a;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.slider-area .preview-2 .nivo-controlNav {
+    bottom: 70px;
+}
+
+.slider-area .slider-progress {
+    background-color: #8ec93e;
+}
+
+.slider-area .slider-read-more li {
+    display: inline;
+    margin: 0 7px;
+}
+
+.slider-area .slider-read-more li a i {
+    padding-left: 10px;
+}
+
+.slider-area .slider-read-more li:last-child a {
+    border: 2px solid #ffffff;
+    background: transparent;
+}
+
+/*-------------------------------------
+04. Obituary Area Styling 
+---------------------------------------*/
+
+.obituary-area {
+    background: #8ec93e;
+}
+
+.obituary-area .row>div {
+    padding: 0;
+}
+
+.obituary-area .obituary-left {
+    width: 400px;
+    float: right;
+    padding: 40px 30px 0 0;
+}
+
+.obituary-area .obituary-left h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.obituary-area .obituary-left p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box {
+    position: relative;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box img {
+    width: 100%;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box .overlay {
+    background: url(img/obituary/overlay.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box .obituary-right-box-content {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    margin: 10px 0 10px 20px;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box .obituary-right-box-content h4 {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box .obituary-right-box-content h4 a {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box .obituary-right-box-content span {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box:hover .overlay,
+.obituary-area .obituary-right .owl-item .obituary-right-box:focus .overlay {
+    transition: all 0.5s;
+    background: rgba(142, 201, 62, 0.5);
+}
+
+.obituary-area .obituary-right .owl-item .obituary-right-box:hover .obituary-right-box-content h5,
+.obituary-area .obituary-right .owl-item .obituary-right-box:focus .obituary-right-box-content h5 {
+    color: #57900a;
+    transition: all 0.5s;
+}
+
+.obituary-area .obituary-right .owl-controls {
+    position: absolute;
+    height: 34px;
+    left: -402px;
+    bottom: 10px;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-prev {
+    border-radius: 0;
+    background: #121212;
+    padding: 6px 12px 3px 12px;
+    opacity: 1;
+    margin: 2px;
+    transition: all 0.5s;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-prev i {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-prev:hover,
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-prev:focus {
+    background: #ffffff;
+    transition: all 0.7s;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-prev:hover i,
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-prev:focus i {
+    color: #000000;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-next {
+    margin: 2px;
+    opacity: 1;
+    border-radius: 0;
+    background: #121212;
+    padding: 6px 12px 3px 12px;
+    transition: all 0.5s;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-next i {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-next:hover,
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-next:focus {
+    background: #ffffff;
+    transition: 0.7s;
+}
+
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-next:hover i,
+.obituary-area .obituary-right .owl-controls .owl-buttons .owl-next:focus i {
+    color: #000000;
+}
+
+/*-------------------------------------
+05. What We Do Area Styling 
+---------------------------------------*/
+
+.what-we-do-area .what-we-do-box {
+    text-align: center;
+    border: 1px solid #dedede;
+    padding: 80px 15px 30px;
+    transition: all 0.5s;
+}
+
+.what-we-do-area .what-we-do-box h3 {
+    margin-bottom: 20px;
+    color: #121212;
+    text-transform: uppercase;
+    font-size: 22px;
+    transition: all 0.5s;
+}
+
+.what-we-do-area .what-we-do-box .what-we-do-icon {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -42px;
+}
+
+.what-we-do-area .what-we-do-box .what-we-do-icon i {
+    border: 1px solid #dedede;
+    color: #8ec93e;
+    border-radius: 45px;
+    font-size: 44px;
+    height: 84px;
+    line-height: 40px;
+    padding: 23px;
+    width: 84px;
+    background: #ffffff;
+    transition: all 0.5s;
+}
+
+.what-we-do-area .what-we-do-box:hover,
+.what-we-do-area .what-we-do-box:focus {
+    transition: all 0.3s;
+    background: #8ec93e;
+    color: #ffffff;
+}
+
+.what-we-do-area .what-we-do-box:hover h3,
+.what-we-do-area .what-we-do-box:focus h3 {
+    transition: all 0.5s;
+    color: #ffffff;
+}
+
+.what-we-do-area .what-we-do-box:hover p,
+.what-we-do-area .what-we-do-box:focus p {
+    transition: all 0.5s;
+    color: #ffffff;
+}
+
+.what-we-do-area .what-we-do-box:hover .what-we-do-icon i,
+.what-we-do-area .what-we-do-box:focus .what-we-do-icon i {
+    transition: all 0.5s;
+    border: 1px solid #8ec93e;
+}
+
+/*-------------------------------------
+06. About Us Area Styling 
+---------------------------------------*/
+
+.about-us-area {
+    background: #121212;
+}
+
+.about-us-area .row>div {
+    padding: 0;
+}
+
+.about-us-area .about-us-left img {
+    width: 100%;
+    min-height: 450px;
+}
+
+.about-us-area .about-us-left img:hover,
+.about-us-area .about-us-left img:focus {
+    opacity: .9;
+}
+
+.about-us-area .about-us-right {
+    padding: 62px 270px 0 60px;
+}
+
+.about-us-area .about-us-right .about-us-right-title {
+    padding-bottom: 10px;
+}
+
+.about-us-area .about-us-right .about-us-right-title h2 {
+    text-transform: uppercase;
+    color: #8ec93e;
+}
+
+.about-us-area .about-us-right p {
+    color: #a6a6a6;
+}
+
+/*-------------------------------------
+07. Our Services Area Styling 
+---------------------------------------*/
+
+.services-area .services-box {
+    margin: 0 15px;
+    position: relative;
+}
+
+.services-area .services-box .services-box-on-hover {
+    padding: 45px 30px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.5s;
+}
+
+.services-area .services-box .services-box-on-hover>h3 {
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.services-area .services-box .services-box-on-hover h3 a {
+    color: #8ec93e;
+}
+
+.services-area .services-box .services-box-on-hover h3 a:hover,
+.services-area .services-box .services-box-on-hover h3 a:focus {
+    color: #121212;
+}
+
+.services-area .services-box .services-box-on-hover p {
+    color: #646464;
+}
+
+.services-area .services-box img {
+    width: 100%;
+}
+
+.services-area .services-box:hover .services-box-on-hover,
+.services-area .services-box:focus .services-box-on-hover {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.services-area .services-box>h3 {
+    background: #ffffff;
+    color: #8ec93e;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.services-area .services-box:hover>h3,
+.services-area .services-box:focus>h3 {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.services-area .owl-pagination {
+    margin-top: 35px;
+}
+
+.services-area .owl-theme .owl-controls .owl-page span {
+    border-radius: 0;
+    width: 40px;
+    height: 6px;
+}
+
+.services-area .owl-theme .owl-controls .owl-page span:hover,
+.services-area .owl-theme .owl-controls .owl-page span:focus {
+    background: #8ec93e;
+}
+
+.services-area .owl-theme .owl-controls .active span {
+    background: #8ec93e;
+}
+
+/*-------------------------------------
+08. Expertise Area Styling 
+---------------------------------------*/
+
+.expertise-area {
+    background: #f7f7f7;
+}
+
+.expertise-area .expertise-left h2 {
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.expertise-area .expertise-left .primary-color {
+    color: #8ec93e;
+    margin-bottom: 30px;
+}
+
+.expertise-area .expertise-right img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.expertise-area .expertise-right img:hover,
+.expertise-area .expertise-right img:focus {
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+/*-------------------------------------
+09. Staff Area Styling 
+---------------------------------------*/
+
+.staff-area {
+    position: relative;
+    background: #8ec93e;
+}
+
+.staff-area .staff-left {
+    margin-top: 40px;
+}
+
+.staff-area .staff-left h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.staff-area .staff-left p {
+    color: #ffffff;
+}
+
+.staff-area .staff-right .staff-right-box {
+    padding: 0 5px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.staff-area .staff-right .staff-right-box .overlay-box {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.staff-area .staff-right .staff-right-box .overlay-box>a>img {
+    display: block;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    transition: all 0.5s;
+}
+
+.staff-area .staff-right .staff-right-box .overlay-box>a>img:hover,
+.staff-area .staff-right .staff-right-box .overlay-box>a>img:focus {
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+
+.staff-area .staff-right .staff-right-box h3 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.staff-area .staff-right .staff-right-box h3 a {
+    color: #ffffff;
+}
+
+.staff-area .staff-right .staff-right-box .designation {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.staff-area .staff-right .owl-controls {
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    bottom: 45px;
+    left: -425px;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-prev {
+    border-radius: 0;
+    background: #121212;
+    padding: 6px 15px;
+    opacity: 1;
+    margin: 2px;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-prev i {
+    line-height: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-prev:hover,
+.staff-area .staff-right .owl-controls .owl-buttons .owl-prev:focus {
+    background: #ffffff;
+    transition: 0.7s;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-prev:hover i,
+.staff-area .staff-right .owl-controls .owl-buttons .owl-prev:focus i {
+    color: #000000;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-next {
+    margin: 2px;
+    opacity: 1;
+    border-radius: 0;
+    background: #121212;
+    padding: 6px 15px;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-next i {
+    line-height: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-next:hover,
+.staff-area .staff-right .owl-controls .owl-buttons .owl-next:focus {
+    background: #ffffff;
+    transition: 0.7s;
+}
+
+.staff-area .staff-right .owl-controls .owl-buttons .owl-next:hover i,
+.staff-area .staff-right .owl-controls .owl-buttons .owl-next:focus i {
+    color: #000000;
+}
+
+/*-------------------------------------
+10. Talk About Area Styling 
+---------------------------------------*/
+
+.talk-about-area .section-title-area .section-title-area-top {
+    margin: 0 0 108px 0;
+}
+
+.talk-about-area .section-title-area .section-title-area-top:after {
+    bottom: -48px;
+}
+
+.talk-about-area .section-title-area .section-title-area-top:before {
+    bottom: -48px;
+}
+
+.talk-about-area .section-title-area .section-title-area-top h2:before {
+    bottom: -64px;
+    content: "\f10d";
+}
+
+.talk-about-area .talk-about-carousel .talk-about-carousel-box {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.talk-about-area .talk-about-carousel .talk-about-carousel-box h5 {
+    color: #8ec93e;
+}
+
+.talk-about-area .owl-pagination {
+    margin-top: 22px;
+}
+
+.talk-about-area .owl-theme .owl-controls .owl-page span {
+    border-radius: 0;
+    width: 40px;
+    height: 6px;
+}
+
+.talk-about-area .owl-theme .owl-controls .owl-page span:hover,
+.talk-about-area .owl-theme .owl-controls .owl-page span:focus {
+    background: #121212;
+}
+
+.talk-about-area .owl-theme .owl-controls .active span {
+    background: #121212;
+}
+
+/*-------------------------------------
+11. Partner Area Styling 
+---------------------------------------*/
+
+.partner-area {
+    padding: 104px 0 90px 0;
+    background: url(img/partner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.partner-area:hover .partner-carousel .owl-buttons,
+.partner-area:focus .partner-carousel .owl-buttons {
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+.partner-area .partner-carousel {
+    position: relative;
+    text-align: center;
+}
+
+.partner-area .partner-carousel h4 a {
+    color: #ffffff;
+}
+
+.partner-area .partner-carousel h4 a:hover,
+.partner-area .partner-carousel h4 a:focus {
+    color: #8ec93e;
+}
+
+.partner-area .partner-carousel .owl-buttons {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-prev {
+    opacity: 1;
+    padding: 7px 15px;
+    left: -10px;
+    border-radius: 0;
+    background: #8ec93e;
+    position: absolute;
+    top: -10px;
+    transition: all 0.5s;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-prev i {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-prev:hover,
+.partner-area .partner-carousel .owl-buttons .owl-prev:focus {
+    background: #ffffff;
+    transition: all 0.5s;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-prev:hover i,
+.partner-area .partner-carousel .owl-buttons .owl-prev:focus i {
+    color: #8ec93e;
+    transition: all 0.5s;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-next {
+    opacity: 1;
+    padding: 7px 15px;
+    right: -10px;
+    border-radius: 0;
+    background: #8ec93e;
+    position: absolute;
+    top: -10px;
+    transition: all 0.5s;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-next i {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-next:hover,
+.partner-area .partner-carousel .owl-buttons .owl-next:focus {
+    background: #ffffff;
+    transition: all 0.5s;
+}
+
+.partner-area .partner-carousel .owl-buttons .owl-next:hover i,
+.partner-area .partner-carousel .owl-buttons .owl-next:focus i {
+    color: #8ec93e;
+    transition: all 0.5s;
+}
+
+/*-------------------------------------
+12. Contact Area Styling 
+---------------------------------------*/
+
+.contact-area .contact-top {
+    text-align: center;
+}
+
+.contact-area .contact-top ul {
+    margin-bottom: 40px;
+}
+
+.contact-area .contact-top ul li {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.contact-area .contact-top ul li a {
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+.contact-area .contact-top ul li a i {
+    color: #8ec93e;
+    font-size: 24px;
+    line-height: 80px;
+}
+
+.contact-area .contact-top ul li:nth-child(2) {
+    margin: 0 131px;
+}
+
+.contact-area .contact-top ul li:nth-child(2):after {
+    content: "";
+    height: 2px;
+    width: 135px;
+    background: #e5e5e5;
+    position: absolute;
+    right: 35%;
+    top: 40px;
+}
+
+.contact-area .contact-top ul li:nth-child(2):before {
+    content: "";
+    height: 2px;
+    width: 135px;
+    background: #e5e5e5;
+    position: absolute;
+    left: 35%;
+    top: 40px;
+}
+
+.contact-area .contact-top ul li:hover,
+.contact-area .contact-top ul li:focus {
+    background: #8ec93e;
+    border: 1px solid #8ec93e;
+    transition: all 0.5s;
+}
+
+.contact-area .contact-top ul li:hover i,
+.contact-area .contact-top ul li:focus i {
+    color: #ffffff;
+}
+
+.contact-area .contact-top ul .active {
+    transition: 0.5s;
+    background: #8ec93e;
+    border: 1px solid #8ec93e;
+}
+
+.contact-area .contact-top ul .active i {
+    color: #ffffff;
+}
+
+.contact-area .tab-content .cotact-heading {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact-area .tab-content .cotact-heading h3 {
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.contact-area .tab-content .contact-address {
+    padding-left: 40px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation: zoomIn 500ms ease-in-out;
+    -moz-animation: zoomIn 500ms ease-in-out;
+    -ms-animation: zoomIn 500ms ease-in-out;
+    animation: zoomIn 500ms ease-in-out;
+    padding-top: 5px;
+}
+
+.contact-area .tab-content .contact-address li {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.contact-area .tab-content .contact-address li i {
+    width: 24px;
+    color: #8ec93e;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-area .tab-content .contact-phone-left {
+    padding-right: 15px;
+    -webkit-animation: fadeInLeft 500ms ease-in-out;
+    -moz-animation: fadeInLeft 500ms ease-in-out;
+    -ms-animation: fadeInLeft 500ms ease-in-out;
+    animation: fadeInLeft 500ms ease-in-out;
+    text-align: right;
+}
+
+.contact-area .tab-content .contact-phone-left li {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.contact-area .tab-content .contact-phone-left li i {
+    width: 24px;
+    color: #8ec93e;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-area .tab-content .contact-phone-right {
+    -webkit-animation: fadeInRight 500ms ease-in-out;
+    -moz-animation: fadeInRight 500ms ease-in-out;
+    -ms-animation: fadeInRight 500ms ease-in-out;
+    animation: fadeInRight 500ms ease-in-out;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.contact-area .tab-content .contact-phone-right li {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.contact-area .tab-content .contact-phone-right li i {
+    width: 24px;
+    color: #8ec93e;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-area .tab-content form {
+    transition: all .5s;
+    -webkit-animation: bounceInUp 1500ms ease-in-out;
+    -moz-animation: bounceInUp 1500ms ease-in-out;
+    -ms-animation: bounceInUp 1500ms ease-in-out;
+    animation: bounceInUp 1500ms ease-in-out;
+}
+
+.contact-area .tab-content form .form-group {
+    margin-bottom: 0;
+}
+
+.contact-area .tab-content form .form-group input {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 0;
+    height: 52px;
+    margin-bottom: 35px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.contact-area .tab-content form .form-group textarea {
+    background: #f7f7f7;
+    border: medium none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 35px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+/*-------------------------------------
+13. Footer Area Styling 
+---------------------------------------*/
+
+.footer-menu-area ul {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-menu-area ul li {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 0 5px;
+}
+
+.footer-menu-area ul li a {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.footer-menu-area ul li a:hover,
+.footer-menu-area ul li a:focus {
+    color: #8ec93e;
+}
+
+.footer-area {
+    padding: 60px 0;
+    background: #121212;
+}
+
+.footer-area .inner-footer {
+    text-align: center;
+}
+
+.footer-area .inner-footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-area .inner-footer p a {
+    color: #bdbdbd;
+}
+
+.footer-area .inner-footer p a:hover,
+.footer-area .inner-footer p a:focus {
+    color: #ffffff;
+}
+
+/*-------------------------------------
+14. About Us Page Styling 
+---------------------------------------*/
+
+.page-about-us-area .section-title-area {
+    padding: 0 80px;
+}
+
+.page-about-us-area .section-title-area .section-title-area-top {
+    margin: 0 0 105px;
+}
+
+.page-about-us-area .about-us-inner-img {
+    margin-bottom: 60px;
+}
+
+.page-about-us-area .about-us-inner-img img:hover,
+.page-about-us-area .about-us-inner-img img:focus {
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+.page-about-us-area .about-us-inner-content h3 {
+    text-transform: capitalize;
+    color: #121212;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.page-about-us-area .about-us-inner-content h3 span {
+    color: #8ec93e;
+}
+
+.page-about-us-area .about-us-inner-content p {
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.page-about-us-area .about-us-inner-content-left {
+    padding-right: 8px;
+}
+
+.page-about-us-area .about-us-inner-content-right {
+    padding-left: 8px;
+}
+
+/*-------------------------------------
+15. Our Obituaries Page Styling 
+---------------------------------------*/
+
+.sidebar-our-obituaries>h3 {
+    font-size: 22px;
+    color: #0e0e0e;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+}
+
+.our-obituaries-area .sidebar-our-obituaries>h3:after {
+    height: 3px;
+    width: 60px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.sidebar-search-area {
+    margin: 46px 0 40px 0;
+    background: #f5f5f5;
+}
+
+.sidebar-search-area {
+    height: 40px;
+}
+
+.sidebar-search-area .form-control {
+    background: transparent;
+    border: none;
+    padding: 5px 0 0 15px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.sidebar-search-area .input-group-addon {
+    border: none;
+    border-radius: 0;
+}
+
+.sidebar-search-area .input-group-addon button {
+    border: 0;
+    background: transparent;
+}
+
+.sidebar-search-area .input-group-addon {
+    background: transparent;
+}
+
+.sidebar-search-area .input-group-addon button i {
+    color: #8ec93e;
+    border: none;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries {
+    margin-top: 55px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media a img {
+    transition: all 0.5s;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media a img:hover,
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media a img:focus {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media .media-body {
+    padding: 5px 0 0 10px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media .media-body h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media .media-body h4 a {
+    color: #0e0e0e;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media .media-body h4 a:hover,
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media .media-body h4 a:focus {
+    color: #8ec93e;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li .media .media-body p {
+    color: #8ec93e;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sidebar-recent-obituaries ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries {
+    margin-top: 45px;
+    text-align: center;
+    padding: 65px 35px 55px 35px;
+    background: url(img/our-obituaries/send-flower.jpg) no-repeat;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries>h3 {
+    position: relative;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries>h3:after {
+    height: 1px;
+    width: 100%;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries>h3:before {
+    height: 1px;
+    width: 100%;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -5px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries span {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries {
+    padding: 35px;
+    margin-top: 45px;
+    background: url(img/our-obituaries/newsletter.jpg) no-repeat;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries .form-group input {
+    color: #ffffff;
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries .form-group ::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries .form-group ::-moz-placeholder {
+    color: #ffffff;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries .form-group ::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries .form-group ::-moz-placeholder {
+    color: #ffffff;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e8e8e8;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box a img {
+    transition: all 0.5s;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media a:hover img,
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media a:focus img {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body {
+    padding-left: 10px;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body h3 {
+    margin-bottom: 16px;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body h3 a {
+    color: #121212;
+    transition: all 0.5s;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body h3 a:hover,
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body h3 a:focus {
+    color: #8ec93e;
+    transition: all 0.5s;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body p {
+    margin-bottom: 12px;
+}
+
+.our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body p i {
+    color: #8ec93e;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+/*-------------------------------------
+16. Obituary Details Page Styling 
+---------------------------------------*/
+
+.obituary-details-area .obituary-details-left {
+    border: 1px solid #d5d5d5;
+    padding: 20px;
+}
+
+.obituary-details-area .obituary-details-left img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-left img:hover,
+.obituary-details-area .obituary-details-left img:focus {
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right h3 {
+    color: #121212;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.obituary-details-area .obituary-details-right>span {
+    position: relative;
+    font-size: 14px;
+    color: #646464;
+}
+
+.obituary-details-area .obituary-details-right>span>i {
+    padding-right: 15px;
+    color: #8ec93e;
+    font-size: 18px;
+}
+
+.obituary-details-area .obituary-details-right>span:after {
+    height: 3px;
+    background: #8ec93e;
+    content: "";
+    width: 50px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-mid {
+    padding: 45px 0 18px 0;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-mid ul li {
+    padding-bottom: 14px;
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-mid ul li i {
+    padding-right: 15px;
+    color: #8ec93e;
+    font-size: 18px;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-mid ul li span {
+    color: #010101;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #d7d7d7;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom p {
+    color: #7a7a7a;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom p span {
+    color: #010101;
+    font-weight: 600;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul {
+    margin-top: 40px;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li {
+    border-radius: 2%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li a {
+    border-radius: 3px;
+    padding: 8px 12px;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li a:hover,
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li a:focus {
+    background: #f9f9f9;
+    color: #454545;
+    border: 1px solid #d0d0d0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li a i {
+    padding-right: 8px;
+    margin-right: 10px;
+    border-right: 1px solid #0a5685;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .facebook-back {
+    background: #4a66a0;
+    border: 1px solid #4a66a0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .facebook-back:hover i,
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .facebook-back:focus i {
+    color: #4a66a0;
+    border-right: 1px solid #d0d0d0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .twitter-back {
+    background: #1b95e0;
+    border: 1px solid #1b95e0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .twitter-back:hover i,
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .twitter-back:focus i {
+    color: #1b95e0;
+    border-right: 1px solid #d0d0d0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .linkedin-back {
+    background: #157ac8;
+    border: 1px solid #157ac8;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .linkedin-back:hover i,
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .linkedin-back:focus i {
+    color: #157ac8;
+    border-right: 1px solid #d0d0d0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .google-back {
+    background: #e62222;
+    border: 1px solid #e62222;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .google-back:hover i,
+.obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li .google-back:focus i {
+    color: #e62222;
+    border-right: 1px solid #d0d0d0;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-tab-area {
+    margin-top: 60px;
+}
+
+.obituary-details-area .obituary-tab-area ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+.obituary-details-area .obituary-tab-area ul li a {
+    color: #646464;
+    padding: 17px 15px;
+    background: #f4f4f4;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-tab-area ul li a:hover,
+.obituary-details-area .obituary-tab-area ul li a:focus {
+    background: #8ec93e;
+    color: #f9f9f9;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-tab-area ul .active a {
+    background: #8ec93e;
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-tab-area .tab-content {
+    border: 1px solid #dcdcdc;
+    margin-top: 14px;
+    padding: 30px 30px 0 30px;
+    transition: all 0.5s;
+}
+
+.obituary-details-area .obituary-tab-area .tab-content p {
+    color: #7a7a7a;
+}
+
+/*-------------------------------------
+17. Services Page Styling 
+---------------------------------------*/
+
+.service-area .sidebar-services>h3 {
+    font-size: 22px;
+    color: #0e0e0e;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+}
+
+.service-area .sidebar-services>h3:after {
+    height: 3px;
+    width: 40px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.service-area .sidebar-services .sidebar-services-carousel {
+    background: #8ec93e;
+    padding: 50px 20px 20px 20px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.service-area .sidebar-services .sidebar-services-carousel p {
+    color: #fefefe;
+}
+
+.service-area .sidebar-services .sidebar-services-carousel h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.service-area .sidebar-services .sidebar-services-carousel span {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-area .sidebar-services .sending-services {
+    margin-top: 45px;
+    text-align: center;
+    padding: 65px 35px 55px 35px;
+    background: url(img/services/send-flower.jpg) no-repeat;
+}
+
+.service-area .sidebar-services .sending-services>h3 {
+    position: relative;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.service-area .sidebar-services .sending-services>h3:after {
+    height: 1px;
+    width: 100%;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+
+.service-area .sidebar-services .sending-services>h3:before {
+    height: 1px;
+    width: 100%;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -5px;
+}
+
+.service-area .sidebar-services .sending-services span {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.service-area .sidebar-services .newsletter {
+    padding: 35px;
+    margin-top: 45px;
+    background: url(img/services/newsletter.jpg) no-repeat;
+}
+
+.service-area .sidebar-services .newsletter h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.service-area .sidebar-services .newsletter .form-group input {
+    color: #ffffff;
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+}
+
+.service-area .sidebar-services .newsletter .form-group ::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.service-area .sidebar-services .newsletter .form-group ::-moz-placeholder {
+    color: #ffffff;
+}
+
+.service-area .sidebar-services .newsletter .form-group ::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.service-area .sidebar-services .newsletter .form-group ::-moz-placeholder {
+    color: #ffffff;
+}
+
+.service-area .sidebar-services .owl-pagination {
+    margin-top: 12px;
+}
+
+.service-area .sidebar-services .owl-theme .owl-controls .owl-page span {
+    border-radius: 0;
+    width: 25px;
+    height: 4px;
+}
+
+.service-area .sidebar-services .owl-theme .owl-controls .owl-page span:hover,
+.service-area .sidebar-services .owl-theme .owl-controls .owl-page span:focus {
+    background: #ffffff;
+}
+
+.service-area .sidebar-services .owl-theme .owl-controls .active span {
+    background: #ffffff;
+}
+
+.service-area .inner-services .inner-services-box {
+    margin-bottom: 30px;
+    padding: 39px 35px 40px 35px;
+    border: 1px solid #e8e8e8;
+}
+
+.service-area .inner-services .inner-services-box .media>a i {
+    color: #8ec93e;
+    font-size: 40px;
+    transition: all 0.5s;
+}
+
+.service-area .inner-services .inner-services-box .media>a:hover i,
+.service-area .inner-services .inner-services-box .media>a:focus i {
+    color: #000000;
+    transition: all 0.5s;
+}
+
+.service-area .inner-services .inner-services-box .media .media-body {
+    padding-left: 20px;
+}
+
+.service-area .inner-services .inner-services-box .media .media-body h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.service-area .inner-services .inner-services-box .media .media-body h3 a {
+    color: #121212;
+    transition: all 0.5s;
+}
+
+.service-area .inner-services .inner-services-box .media .media-body .media-heading a:hover,
+.service-area .inner-services .inner-services-box .media .media-body .media-heading a:focus {
+    color: #8ec93e;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.service-area .inner-services .inner-services-box .media .media-body p {
+    color: #646464;
+}
+
+/*-------------------------------------
+18. Single Service Page Styling
+---------------------------------------*/
+
+.single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service img:hover,
+.single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service img:focus {
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+.single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service h3 {
+    color: #121212;
+    display: block;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    position: relative;
+}
+
+.single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service h3:after {
+    background: #8ec93e;
+    bottom: -17px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 60px;
+}
+
+.single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service blockquote {
+    border-left: 3px solid #8ec93e;
+}
+
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs {
+    border: 0;
+}
+
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li {
+    float: none;
+    margin: 0 0 10px 0;
+}
+
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li.active {
+    background: #8ec93e;
+    transition: all 0.5s;
+}
+
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li.active a {
+    color: #ffffff;
+    margin: 0;
+    border: 1px solid #8ec93e;
+    transition: all 0.5s;
+}
+
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li a {
+    display: block;
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    border: 1px solid #8ec93e;
+    color: #121212;
+    transition: all 0.5s;
+}
+
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li a:hover,
+.single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li a:focus {
+    color: #ffffff;
+    margin: 0;
+    border: 1px solid #8ec93e;
+    background: #8ec93e;
+    transition: all 0.5s;
+}
+
+/*-------------------------------------
+19. Online Store Page Styling 
+---------------------------------------*/
+
+.online-store-area .sidebar-online-store>h3 {
+    font-size: 22px;
+    color: #0e0e0e;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+}
+
+.online-store-area .sidebar-online-store>h3:after {
+    height: 3px;
+    width: 40px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.online-store-area .sidebar-online-store .product-category {
+    margin: 50px 0;
+}
+
+.online-store-area .sidebar-online-store .product-category li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #dddddd;
+}
+
+.online-store-area .sidebar-online-store .product-category li:last-child {
+    border-bottom: 0;
+}
+
+.online-store-area .sidebar-online-store .product-category li a {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
+}
+
+.online-store-area .sidebar-online-store .product-category li a:hover,
+.online-store-area .sidebar-online-store .product-category li a:focus {
+    color: #8ec93e;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products {
+    margin-top: 60px;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media a {
+    padding-right: 0;
+    margin: 0 20px 0 0;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media a img {
+    transition: all 0.5s;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media a:hover img,
+.online-store-area .sidebar-online-store .best-seller-products>li .media a:focus img {
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body h3 a {
+    color: #646464;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body h3 a:hover,
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body h3 a:focus {
+    color: #8ec93e;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body ul {
+    margin: 7px 0;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body ul li {
+    display: inline-block;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body ul li i {
+    color: #f7c51d;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body ul li:last-child i {
+    color: #a7a7a7;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8ec93e;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li .media .media-body p span {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #222222;
+}
+
+.online-store-area .sidebar-online-store .best-seller-products>li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.online-store-area .inner-online-store .inner-online-store-top-left p {
+    color: #333333;
+    font-size: 18px;
+}
+
+.online-store-area .inner-online-store .inner-online-store-top-right {
+    float: right;
+}
+
+.online-store-area .inner-online-store .inner-online-store-top-right .dropdown .dropdown-menu {
+    border-radius: 0;
+}
+
+.online-store-area .inner-online-store .inner-online-store-top-right .dropdown .dropdown-menu li:hover a,
+.online-store-area .inner-online-store .inner-online-store-top-right .dropdown .dropdown-menu li:focus a {
+    transition: 0.5s;
+    background: #8ec93e !important;
+    color: #ffffff !important;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top .overlay {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 1s;
+    z-index: 8;
+    position: absolute;
+    opacity: 0;
+    transform: scaleY(0);
+    background: rgba(142, 201, 62, 0.8);
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top .overlay .active-in-hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top .overlay .active-in-hover .store-box-content ul li {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top .overlay .active-in-hover .store-box-content ul li a {
+    background-color: #ffffff;
+    padding: 7px 10px;
+    color: #222222;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top .overlay .active-in-hover .store-box-content ul li a:hover,
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top .overlay .active-in-hover .store-box-content ul li a:focus {
+    transition: 1s;
+    background-color: #57900a;
+    color: #ffffff;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top:hover .overlay,
+.online-store-area .inner-online-store .inner-online-store-box .store-box-top:focus .overlay {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom {
+    padding: 20px 0 30px 0;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom h3 {
+    font-size: 18px;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom h3 a {
+    color: #111111;
+    transition: all 0.5s;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom h3 a:hover,
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom h3 a:focus {
+    color: #8ec93e;
+    transition: all 0.5s;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom ul {
+    padding-bottom: 5px;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom ul li {
+    display: inline-block;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom ul li i {
+    color: #f7c51d;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom ul li:last-child i {
+    color: #a7a7a7;
+}
+
+.online-store-area .inner-online-store .inner-online-store-box .store-box-bottom span {
+    font-size: 16px;
+    color: #8ec93e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*-------------------------------------
+20. Product Details Page Styling 
+---------------------------------------*/
+
+.product-details-area .sidebar-product-details>h3 {
+    font-size: 22px;
+    color: #0e0e0e;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+}
+
+.product-details-area .sidebar-product-details>h3:after {
+    height: 3px;
+    width: 40px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.product-details-area .sidebar-product-details .product-category {
+    margin: 50px 0;
+}
+
+.product-details-area .sidebar-product-details .product-category li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #dddddd;
+}
+
+.product-details-area .sidebar-product-details .product-category li:last-child {
+    border-bottom: 0;
+}
+
+.product-details-area .sidebar-product-details .product-category li a {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
+}
+
+.product-details-area .sidebar-product-details .product-category li a:hover,
+.product-details-area .sidebar-product-details .product-category li a:focus {
+    color: #8ec93e;
+}
+
+.product-details-area .sidebar-product-details .related-products {
+    margin-top: 60px;
+}
+
+.product-details-area .sidebar-product-details .related-products>li {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media a {
+    padding-right: 0;
+    margin: 0 20px 0 0;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media a img {
+    transition: all 0.5s;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media a:hover img,
+.product-details-area .sidebar-product-details .related-products>li .media a:focus img {
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body h3 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body h3 a {
+    color: #646464;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body h3 a:hover,
+.product-details-area .sidebar-product-details .related-products>li .media .media-body h3 a:focus {
+    color: #8ec93e;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body ul {
+    margin: 7px 0;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body ul li {
+    display: inline-block;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body ul li i {
+    color: #f7c51d;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body ul li:last-child i {
+    color: #a7a7a7;
+}
+
+.product-details-area .sidebar-product-details .related-products>li .media .media-body p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8ec93e;
+}
+
+.product-details-area .sidebar-product-details .related-products>li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left a {
+    border: 1px solid #e5e5e5;
+    display: block;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left a img {
+    width: 100%;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left ul li {
+    width: 29%;
+    display: inline-block;
+    margin: 16px 17px 0 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left ul li a img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left ul li a img:hover,
+.product-details-area .inner-product-details .inner-product-details-left ul li a img:focus {
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left ul li:last-child {
+    margin: 16px 0 0 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-left ul .active a img {
+    opacity: 0.5;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right h3 {
+    color: #111111;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right ul {
+    margin: 15px 0 8px 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right ul li {
+    display: inline-block;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right ul li i {
+    color: #f7c51d;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right ul li:last-child {
+    color: #646464;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right ul li:last-child i {
+    color: #a7a7a7;
+    margin-right: 15px;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #8ec93e;
+    margin-bottom: 22px;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right>span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right .product-details {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 5px 0 20px 0;
+    margin: 25px 0 20px 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right .product-details>p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right .cart-area a {
+    float: left;
+    margin-right: 8px;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right .cart-area input {
+    width: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    font-size: 18px;
+    color: #222222;
+    font-family: 'Open Sans', sans-serif;
+    height: 46px;
+    text-align: center;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right>p {
+    margin-bottom: 5px;
+    color: #7a7a7a;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.product-details-area .inner-product-details .inner-product-details-right>p>span {
+    color: #222222;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area {
+    margin-top: 60px;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area ul li {
+    margin: -2px;
+    display: inline-block;
+    padding: 10px 0;
+    background: #f4f4f4;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area ul li a {
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 12px 30px;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area ul .active {
+    background: transparent;
+    border-bottom: none;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area ul .active a {
+    color: #8ec93e;
+    text-decoration: none;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area ul .active:last-child {
+    border-right: none;
+}
+
+.product-details-area .inner-product-details .product-details-tab-area .tab-content {
+    padding: 35px 35px 15px 35px;
+}
+
+/*-------------------------------------
+21. Our Staff Page Styling 
+---------------------------------------*/
+
+.our-staff-area .our-staff-box {
+    margin-bottom: 25px;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top {
+    position: relative;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    transition: all 1s;
+    z-index: 8;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(142, 201, 62, 0.9);
+    transform: scaleY(0);
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li {
+    display: inline;
+    margin: 0 1px;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li a {
+    background: #ffffff;
+    height: 35px;
+    width: 37px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li a i {
+    font-size: 14px;
+    color: #222222;
+    line-height: 35px;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li:hover a,
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li:focus a {
+    transition: all 0.5s;
+    background: #57900a;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li:hover a i,
+.our-staff-area .our-staff-box .our-staff-box-top .overlay ul li:focus a i {
+    transition: all 0.5s;
+    color: #ffffff;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-bottom {
+    margin-top: 24px;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-bottom h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-bottom h3 a {
+    color: #333333;
+    transition: all 0.5s;
+}
+
+.our-staff-area .our-staff-box .our-staff-box-bottom p {
+    font-size: 16px;
+    color: #646464;
+    margin-bottom: 0;
+}
+
+.our-staff-area .our-staff-box:hover .our-staff-box-top .overlay,
+.our-staff-area .our-staff-box:focus .our-staff-box-top .overlay {
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 0.7s;
+}
+
+.our-staff-area .our-staff-box:hover .our-staff-box-bottom h3 a:hover,
+.our-staff-area .our-staff-box:hover .our-staff-box-bottom h3 a:focus {
+    color: #8ec93e;
+    transition: all 0.5s;
+}
+
+/*-------------------------------------
+22. Single Staff Page Styling 
+---------------------------------------*/
+
+.single-staff-area .single-staff-left h3 {
+    text-transform: uppercase;
+    color: #121212;
+    font-weight: 700;
+}
+
+.single-staff-area .single-staff-left span {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-size: 14px;
+    color: #646464;
+}
+
+.single-staff-area .single-staff-left span:after {
+    height: 3px;
+    width: 60px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+}
+
+.single-staff-area .single-staff-left .single-staff-left-bottom {
+    padding-top: 45px;
+}
+
+.single-staff-area .single-staff-left .single-staff-left-bottom p {
+    font-size: 14px;
+}
+
+.single-staff-area .single-staff-left .staff-social {
+    margin-top: 70px;
+}
+
+.single-staff-area .single-staff-left .staff-social li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.single-staff-area .single-staff-left .staff-social li a {
+    background: #eaeaea;
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+.single-staff-area .single-staff-left .staff-social li a i {
+    line-height: 30px;
+    font-size: 14px;
+    color: #666666;
+    transition: all 0.7s;
+}
+
+.single-staff-area .single-staff-left .staff-social li a:hover,
+.single-staff-area .single-staff-left .staff-social li a:focus {
+    transition: all 0.7s;
+    background: #8ec93e;
+}
+
+.single-staff-area .single-staff-left .staff-social li a:hover i,
+.single-staff-area .single-staff-left .staff-social li a:focus i {
+    color: #ffffff;
+    transition: all 0.7s;
+}
+
+.single-staff-area .single-staff-right .single-staff-right-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.single-staff-area .single-staff-right .single-staff-right-img a img {
+    width: 100%;
+}
+
+.single-staff-area .single-staff-right .single-staff-right-img .overlay {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    transition: all 1s;
+    z-index: 8;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(142, 201, 62, 0.8);
+    transform: scaleY(0);
+}
+
+.single-staff-area .single-staff-right .single-staff-right-img:hover .overlay,
+.single-staff-area .single-staff-right .single-staff-right-img:focus .overlay {
+    opacity: 1;
+    transition: all 0.7s;
+    transform: scaleY(1);
+}
+
+/*-------------------------------------
+23. Contact Us Page Styling 
+---------------------------------------*/
+
+.page-contact-us-area .page-contact-us-left {
+    margin-top: 65px;
+}
+
+.page-contact-us-area .page-contact-us-left>h3 {
+    position: relative;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 40px;
+}
+
+.page-contact-us-area .page-contact-us-left>h3:after {
+    height: 3px;
+    width: 60px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.page-contact-us-area .page-contact-us-left p {
+    font-size: 14px;
+    color: #646464;
+}
+
+.page-contact-us-area .page-contact-us-left .contact-form {
+    margin-top: 15px;
+}
+
+.page-contact-us-area .page-contact-us-left .contact-form .form-group {
+    margin-bottom: 0;
+}
+
+.page-contact-us-area .page-contact-us-left .contact-form .form-group input,
+.page-contact-us-area .page-contact-us-left .contact-form .form-group textarea {
+    background: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #7a7a7a;
+    padding: 10px;
+    height: 42px;
+    border-radius: 0;
+    border: 1px solid #e5e5e5;
+    box-shadow: none;
+    margin-bottom: 24px;
+}
+
+.page-contact-us-area .page-contact-us-left .contact-form .form-group input:focus,
+.page-contact-us-area .page-contact-us-left .contact-form .form-group textarea:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.page-contact-us-area .page-contact-us-left .contact-form .form-group textarea {
+    height: auto;
+}
+
+.page-contact-us-area .page-contact-us-right {
+    margin-top: 65px;
+}
+
+.page-contact-us-area .page-contact-us-right>h3 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 40px;
+}
+
+.page-contact-us-area .page-contact-us-right>h3:after {
+    height: 3px;
+    width: 60px;
+    content: "";
+    background: #8ec93e;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.page-contact-us-area .page-contact-us-right ul {
+    padding-top: 5px;
+}
+
+.page-contact-us-area .page-contact-us-right ul li {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.page-contact-us-area .page-contact-us-right ul li i {
+    width: 24px;
+    color: #8ec93e;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/*-------------------------------------
+24. 404 Error Page Styling 
+---------------------------------------*/
+
+.page-error-area {
+    text-align: center;
+}
+
+.page-error-area .page-error-top {
+    background: #8ec93e;
+    padding: 60px 0 130px 0;
+}
+
+.page-error-area .page-error-top h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 300px;
+    color: #f5f5f5;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+.page-error-area .page-error-top h3 {
+    letter-spacing: 4px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.page-error-area .page-error-bottom {
+    margin-top: 45px;
+}
+
+.page-error-area .page-error-bottom h5 {
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
+    padding: 0 250px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/*-------------------------------------
+25. Other Elements Styling 
+---------------------------------------*/
+
+/*-------------------------------------
+25.1 Inner Page Header Banner Styling 
+---------------------------------------*/
+
+.banner-area {
+    position: relative;
+    background: url("img/banner/1.jpg") no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    background-position: center;
+}
+
+.banner-area .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.banner-area .banner h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.banner-area .banner .breadcumb-area {
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.banner-area .banner .breadcumb-area ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-area .banner .breadcumb-area ul .breadcumb-parent span {
+    padding: 0 5px;
+    color: #b6b6b6;
+}
+
+.banner-area .banner .breadcumb-area ul .breadcumb-child {
+    color: #8ec93e;
+    letter-spacing: 1px;
+}
+
+.banner-area .banner .breadcumb-area ul li {
+    display: block;
+    float: left;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.banner-area .banner .breadcumb-area ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #b6b6b6;
+    font-weight: 400;
+}
+
+.banner-area .banner .breadcumb-area ul li a:hover,
+.banner-area .banner .breadcumb-area ul li a:focus {
+    color: #8ec93e;
+}
+
+/*-------------------------------------
+25.2 Section Title Styling 
+---------------------------------------*/
+
+.section-title-area {
+    padding: 0 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-title-area .section-title-area-top {
+    position: relative;
+    margin: 0 0 100px 0;
+}
+
+.section-title-area .section-title-area-top:after {
+    background: #e0e0e0;
+    content: "";
+    height: 2px;
+    width: 58px;
+    position: absolute;
+    bottom: -45px;
+    right: 40%;
+}
+
+.section-title-area .section-title-area-top:before {
+    background: #e0e0e0;
+    content: "";
+    height: 2px;
+    width: 58px;
+    position: absolute;
+    bottom: -45px;
+    left: 40%;
+}
+
+.section-title-area .section-title-area-top span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #646464;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.section-title-area .section-title-area-top h2 {
+    text-transform: uppercase;
+}
+
+.section-title-area .section-title-area-top h2:before {
+    content: "\f19c";
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    right: 0;
+    font-family: fontawesome;
+    color: #8ec93e;
+    font-size: 30px;
+}
+
+/*-------------------------------------
+25.3 Button Styling 
+---------------------------------------*/
+
+.buy-btn {
+    background: transparent;
+    padding: 15px 30px;
+    border: 2px solid #8ec93e;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: #8ec93e;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.5s;
+}
+
+.buy-btn i {
+    padding-left: 10px;
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
+    color: #fff;
+    background: #8ec93e;
+    transition: all 0.5s;
+}
+
+.send-btn {
+    background: #8ec93e;
+    padding: 14px 35px;
+    border: 1px solid #8ec93e;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    background: #57900a;
+    border: 1px solid #8ec93e;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.btn-error {
+    background: #8ec93e;
+    padding: 15px 33px;
+    color: #ffffff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.5s
+}
+
+.btn-error:hover,
+.btn-error:focus {
+    background: #57900a;
+    color: #ffffff;
+    transition: all 0.5s
+}
+
+.subscribe-btn {
+    background: #8ec93e;
+    padding: 10px 18px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background: #57900a;
+    color: #ffffff;
+    transition: all 0.5s
+}
+
+.read-more-btn {
+    background: #8ec93e;
+    padding: 10px 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.read-more-btn:hover,
+.read-more-btn:focus {
+    background: #57900a;
+    color: #ffffff;
+    transition: all 0.5s
+}
+
+.cart-btn {
+    background: #8ec93e;
+    padding: 12px 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.5s
+}
+
+.cart-btn:hover,
+.cart-btn:focus {
+    background: #57900a;
+    color: #ffffff;
+    transition: all 0.5s
+}
+
+.sorting-btn {
+    background: transparent;
+    padding: 10px 16px;
+    color: #646464;
+    border-radius: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #e7e7e7;
+    transition: all 0.5s
+}
+
+.sorting-btn span {
+    margin-left: 15px !important;
+}
+
+.sorting-btn:hover,
+.sorting-btn:focus {
+    color: #8ec93e;
+    outline: none;
+    transition: all 0.5s
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn.active,
+.btn:active {
+    box-shadow: none;
+}
+
+/*-------------------------------------
+25.4 Pagination Styling 
+---------------------------------------*/
+
+.bs-example .pagination {
+    margin-bottom: 0;
+}
+
+.bs-example .pagination li:first-child a {
+    margin-right: 12px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 0;
+}
+
+.bs-example .pagination li:last-child a {
+    margin-left: 5px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 0;
+}
+
+.bs-example .pagination li a {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 7px;
+    padding: 8px 16px;
+    color: #616161;
+    text-decoration: underline;
+}
+
+.bs-example .pagination li a:hover,
+.bs-example .pagination li a:focus {
+    transition: 0.5s;
+    background: #8ec93e;
+    border: 1px solid #8ec93e;
+    color: #ffffff;
+}
+
+.bs-example .pagination li:first-child a {
+    text-decoration: none;
+    width: 100px;
+}
+
+.bs-example .pagination li:last-child a {
+    text-decoration: none;
+    width: 100px;
+}
+
+.bs-example .pagination .active a {
+    background: #8ec93e;
+    border: 1px solid #8ec93e;
+    color: #ffffff;
+}
+
+/*-------------------------------------
+26. ScrollUp Styling 
+---------------------------------------*/
+
+#scrollUp {
+    background: #8ec93e;
+    bottom: 100px;
+    color: #ffffff !important;
+    display: block;
+    font-size: 25px;
+    height: 40px;
+    line-height: 0;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+    width: 50px;
+    z-index: 99999;
+}
+
+#scrollUp i {
+    display: block;
+    padding-top: 7px;
+}
+
+#scrollUp:hover,
+#scrollUp:focus {
+    background: #57900a;
+}
+
+/*-------------------------------------
+27. Preloader Styling 
+---------------------------------------*/
+
+#preloader {
+    background: #ffffff url('img/preloader.gif') no-repeat scroll center center;
+    height: 100%;
+    left: 0;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}

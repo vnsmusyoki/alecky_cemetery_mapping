@@ -1,0 +1,824 @@
+/* Large Devices, Wide Screens */
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .slider-area .small-content {
+        padding: 40px 150px 0 150px;
+    }
+    .slider-area .preview-2 .nivo-controlNav {
+        bottom: 70px;
+    }
+    .obituary-area .obituary-left h4 {
+        margin-bottom: 10px
+    }
+    .obituary-area .obituary-right .owl-controls {
+        bottom: 10px;
+    }
+    .about-us-area .about-us-right {
+        padding: 60px 30px 0 60px;
+    }
+}
+
+/* Normal Devices*/
+
+@media only screen and (max-width: 1199px) {
+    .section-space {
+        padding: 80px 0;
+    }
+    .section-space-top {
+        padding: 80px 0 0 0;
+    }
+    .section-title-area .section-title-area-top:after {
+        right: 38%;
+    }
+    .section-title-area .section-title-area-top:before {
+        left: 38%;
+    }
+    .main-header-area .main-menu-area nav>ul>li {
+        padding: 33px 14px;
+    }
+    .main-header-area .main-menu-area nav>ul>li .mega-menu-area {
+        left: -372px;
+    }
+    .main-header-area .search-box>ul li form .search-form {
+        left: -165px;
+    }
+    .slider-area .big-title {
+        margin-bottom: 0;
+        font-size: 42px;
+    }
+    .slider-area .button {
+        top: 73%;
+    }
+    .slider-area .preview-2 .nivo-controlNav {
+        bottom: 60px;
+    }
+    .slider-area .small-content {
+        padding: 40px 150px 0 150px;
+    }
+    .primary-color {
+        margin-bottom: 20px !important;
+    }
+    .buy-btn {
+        margin-top: 0;
+    }
+    .about-us-area .about-us-right {
+        padding: 40px 15px 0 30px;
+    }
+    .staff-area .staff-right .owl-controls {
+        left: -440px;
+    }
+    .contact-area .contact-top ul li:nth-child(2):after {
+        right: 31.8%;
+    }
+    .contact-area .contact-top ul li:nth-child(2):before {
+        left: 31.9%;
+    }
+    .contact-area .tab-content .contact-address {
+        padding-left: 6px;
+    }
+    .inner-our-obituaries-box .media-body p {
+        margin-bottom: 12px;
+    }
+    .our-obituaries-area .sidebar-our-obituaries>h4 {
+        font-size: 18px;
+    }
+    .obituary-details-area .obituary-details-right .obituary-details-right-mid ul li {
+        font-size: 11px;
+    }
+    .page-about-us-area .about-us-inner-img img {
+        min-height: auto !important;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries>h4 {
+        font-size: 18px;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries h4 {
+        font-size: 18px;
+    }
+    .service-area .inner-services .inner-services-box {
+        padding: 37px 35px 32px;
+    }
+    .service-area .sidebar-services>h4 {
+        font-size: 18px;
+    }
+    .service-area .sidebar-services .sending-services>h4 {
+        font-size: 18px;
+    }
+    .service-area .sidebar-services .newsletter h4 {
+        font-size: 18px;
+    }
+    .product-details-area .inner-product-details .inner-product-details-left ul li {
+        margin: 16px 13px 0 0;
+    }
+    .page-error-area .page-error-bottom h5 {
+        padding: 0 150px;
+    }
+    .obituary-area .obituary-left h4 {
+        margin-bottom: 9px;
+    }
+    .about-us-area .about-us-right p {
+        margin: 0 0 10px;
+    }
+    .page-contact-us-area .page-contact-us-right ul li {
+        font-size: 13px;
+    }
+    .obituary-area .obituary-left {
+        padding: 40px 0 0 70px;
+        text-align: center;
+    }
+    .obituary-area .obituary-right .owl-controls {
+        left: -200px;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 991px) {
+    .section-title-area {
+        padding: 0;
+    }
+    .section-title-area .section-title-area-top:after {
+        right: 36%;
+    }
+    .section-title-area .section-title-area-top:before {
+        left: 36%;
+    }
+    .section-title-area .section-title-area-top h2 {
+        font-size: 30px;
+    }
+    .section-title-area .section-title-area-top {
+        margin: 0 0 80px 0;
+    }
+    .header-area-top-area {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .header-area-top-area .header-top-right {
+        text-align: center;
+    }
+    .main-header-area {
+        text-align: center;
+    }
+    .main-header-area .search-box {
+        display: none;
+    }
+    .main-header-area .main-menu-area nav ul li ul {
+        top: 101%;
+    }
+    .main-header-area .main-menu-area nav>ul>li .mega-menu-area {
+        left: -474px;
+    }
+    .main-header-area .main-menu-area nav>ul>li {
+        padding: 20px 14px;
+    }
+    .slider-area .big-title {
+        font-size: 36px;
+    }
+    .slider-area .small-content {
+        padding: 20px 0px 0;
+    }
+    .slider-area .button {
+        top: 74%;
+    }
+    .slider-area .preview-2 .nivo-controlNav {
+        opacity: 1;
+        bottom: 35px;
+    }
+    .obituary-area .obituary-left {
+        width: 100%;
+        padding: 20px 30px 0 10px;
+        text-align: center;
+    }
+    .obituary-area .obituary-right .owl-controls {
+        bottom: 5px;
+        left: -240px;
+    }
+    .about-us-area .about-us-left img {
+        width: 100%;
+        min-height: auto;
+    }
+    .about-us-area .about-us-right h2 {
+        font-size: 32px;
+    }
+    .about-us-area .about-us-right {
+        padding: 60px 15px;
+    }
+    .expertise-area {
+        text-align: center;
+    }
+    .expertise-area .expertise-left {
+        padding-bottom: 20px;
+    }
+    .expertise-area .expertise-left h2 {
+        font-size: 32px;
+    }
+    .staff-area .staff-left h2 {
+        font-size: 32px;
+    }
+    .staff-area .staff-right .owl-controls {
+        left: -348px;
+        bottom: 88px;
+    }
+    .contact-area .contact-top ul li:nth-child(2):after {
+        right: 26.5%;
+    }
+    .contact-area .contact-top ul li:nth-child(2):before {
+        left: 26.6%;
+    }
+    .contact-area .tab-content .contact-address {
+        padding-left: 32px;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries,
+    .our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries {
+        background-size: cover;
+        text-align: center;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries {
+        margin-bottom: 45px;
+    }
+    .obituary-details-area .obituary-details-right .obituary-details-right-mid ul li {
+        font-size: 14px;
+    }
+    .our-obituaries-area .sidebar-our-obituaries>h4 {
+        font-size: 22px;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .sending-our-obituaries>h4 {
+        font-size: 22px;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries h4 {
+        font-size: 22px;
+    }
+    .service-area .sidebar-services .newsletter {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .service-area .sidebar-services .sending-services,
+    .service-area .sidebar-services .newsletter {
+        background-size: cover;
+    }
+    .service-area .sidebar-services .sending-services>h4,
+    .service-area .sidebar-services .newsletter h4 {
+        font-size: 22px;
+    }
+    .service-area .sidebar-services>h4 {
+        font-size: 22px;
+    }
+    .product-details-area .sidebar-product-details .related-products {
+        margin-bottom: 30px;
+    }
+    .single-staff-area .single-staff-left {
+        margin-bottom: 30px;
+    }
+    .page-contact-us-area .page-contact-us-right ul li {
+        font-size: 14px;
+    }
+    .page-error-area .page-error-bottom h5 {
+        padding: 0;
+    }
+    .talk-about-area .talk-about-carousel .talk-about-carousel-box {
+        padding: 0 50px;
+    }
+    .product-details-area .inner-product-details .inner-product-details-left ul li {
+        margin: 16px 9px 0 0;
+    }
+    .staff-area .staff-right .staff-right-box .overlay-box>a>img {
+        width: 75%;
+        display: inline-block;
+    }
+    .banner-area {
+        padding: 60px 0;
+    }
+    .banner-area .banner h2 {
+        font-size: 28px;
+    }
+    .obituary-details-area .obituary-details-right .obituary-details-right-bottom ul li {
+        margin-bottom: 17px;
+        margin-right: 0;
+    }
+    .obituary-details-area .obituary-details-right .obituary-details-right-bottom ul {
+        text-align: center;
+    }
+    .partner-area {
+        padding: 84px 0 72px;
+    }
+    .slider-area .button {
+        top: 87%;
+    }
+    .what-we-do-area .what-we-do-box h3 {
+        font-size: 20px;
+    }
+    .page-contact-us-area .page-contact-us-right ul li:last-child {
+        padding-bottom: 0;
+    }
+    .sidebar-our-obituaries>h3 {
+        font-size: 20px;
+    }
+    .service-area .sidebar-services>h3 {
+        font-size: 20px;
+    }
+    .online-store-area .sidebar-online-store>h3 {
+        font-size: 20px;
+    }
+    .product-details-area .sidebar-product-details>h3 {
+        font-size: 20px;
+    }
+    .our-staff-area .our-staff-box .our-staff-box-bottom h3 {
+        font-size: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 767px) {
+    .obituary-details-area .obituary-details-right {
+        margin-top: 30px;
+    }
+    .what-we-do-box {
+        margin-bottom: 54px;
+    }
+    .section-space {
+        padding: 60px 0;
+    }
+    .section-space-top {
+        padding: 60px 0 0 0;
+    }
+    .section-title-area {
+        margin-bottom: 30px;
+    }
+    .page-about-us-area .section-title-area .section-title-area-top:after {
+        right: 20%;
+    }
+    .page-about-us-area .section-title-area .section-title-area-top:before {
+        left: 20%;
+    }
+    .page-about-us-area .section-title-area {
+        padding: 0;
+    }
+    .section-title-area .section-title-area-top:after {
+        right: 30%;
+    }
+    .section-title-area .section-title-area-top:before {
+        left: 30%;
+    }
+    .mobile-menu-area {
+        display: block;
+    }
+    .header-area-top-area {
+        display: none;
+    }
+    .main-header-area {
+        display: none;
+    }
+    .slider-area .small-content {
+        display: none;
+    }
+    .slider-area .button .btn-success {
+        padding: 10px 35px;
+    }
+    .slider-area .preview-2 .nivo-controlNav {
+        bottom: 30px;
+    }
+    .section-title-area-top h2 {
+        font-size: 30px;
+    }
+    .section-title-area .section-title-area-top {
+        margin: 0 0 80px 0;
+    }
+    .about-us-area .about-us-right h2 {
+        font-size: 30px;
+    }
+    .obituary-area .obituary-left {
+        padding: 60px 0 70px 0;
+    }
+    .obituary-area .obituary-right .owl-controls {
+        left: 0;
+        right: 0;
+        top: -76px;
+    }
+    .expertise-area .expertise-left h2 {
+        font-size: 30px;
+    }
+    .talk-about-area .talk-about-carousel .talk-about-carousel-box {
+        padding: 0 30px;
+    }
+    .staff-area .staff-right .owl-controls {
+        bottom: 0;
+    }
+    .staff-area .staff-right {
+        padding-bottom: 60px;
+    }
+    .staff-area .staff-left {
+        text-align: center;
+        margin-top: 0;
+    }
+    .staff-area .staff-right .owl-controls {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .services-area .services-box .services-box-on-hover {
+        padding: 100px 70px;
+    }
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+        width: 100%;
+    }
+    .contact-area .contact-top ul li:nth-child(2):after {
+        display: none;
+    }
+    .contact-area .contact-top ul li:nth-child(2):before {
+        display: none;
+    }
+    .contact-area .contact-top ul li:nth-child(2) {
+        margin: 0 80px;
+    }
+    .contact-area .tab-content .contact-address {
+        padding-left: 6px;
+    }
+    .inner-our-obituaries-box .media-body p {
+        margin-bottom: 24px;
+    }
+    .about-us-inner-content.about-us-inner-content-left {
+        margin-bottom: 30px;
+    }
+    .page-about-us-area .section-title-area .section-title-area-top h2 {
+        font-size: 32px;
+    }
+    .online-store-area .sidebar-online-store .best-seller-products {
+        margin-bottom: 30px;
+    }
+    .product-details-area .inner-product-details .inner-product-details-right {
+        margin-top: 30px;
+    }
+    .product-details-area .inner-product-details .inner-product-details-left ul li {
+        margin: 16px 25px 0 0;
+    }
+    .obituary-details-area .obituary-tab-area ul li {
+        margin-bottom: 22px;
+    }
+    .page-error-area .page-error-top {
+        padding: 60px 0 98px;
+    }
+    .page-error-area .page-error-top h2 {
+        font-size: 200px;
+    }
+    .nivo-caption {
+        top: 0;
+    }
+    .talk-about-area .section-title-area .section-title-area-top {
+        margin: 0 0 90px;
+    }
+    .contact-area .tab-content form .form-group {
+        text-align: center;
+    }
+    .page-about-us-area {
+        text-align: center;
+    }
+    .page-contact-us-area .page-contact-us-left h4 {
+        font-size: 22px;
+    }
+    .page-contact-us-area .page-contact-us-left {
+        text-align: center;
+    }
+    .page-contact-us-area .page-contact-us-left h4::after {
+        right: 0;
+        margin: 0 auto;
+    }
+    .page-contact-us-area .page-contact-us-right {
+        text-align: center;
+    }
+    .page-contact-us-area .page-contact-us-right h4::after {
+        right: 0;
+        margin: 0 auto;
+    }
+    .single-service-inner-page-area .single-service-inner-tab ul.nav-tabs li {
+        margin: 5px 0;
+    }
+    .page-about-us-area .section-title-area .section-title-area-top {
+        margin: 0 0 90px 0;
+    }
+    .page-contact-us-area .page-contact-us-left>h3::after {
+        right: 0;
+        margin: 0 auto;
+    }
+    .page-contact-us-area .page-contact-us-right>h3::after {
+        right: 0;
+        margin: 0 auto;
+    }
+    .obituary-details-area .obituary-tab-area .tab-content {
+        margin-top: 37px;
+    }
+    .bs-example .pagination {
+        margin-bottom: 30px;
+    }
+    .slider-area .button {
+        top: 65%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 479px) {
+    .online-store-area .inner-online-store .inner-online-store-box .store-box-bottom {
+        text-align: center;
+    }
+    .inner-services-box .media-body h3 {
+        font-size: 22px;
+    }
+    .online-store-area .inner-online-store .inner-online-store-top-left p {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+    .section-title-area .section-title-area-top h2 {
+        font-size: 26px;
+    }
+    .mobile-menu-area {
+        display: block;
+    }
+    .header-area-top-area {
+        display: none;
+    }
+    .main-header-area,
+    .slider-content {
+        display: none;
+    }
+    .section-title-area {
+        margin-bottom: 50px;
+    }
+    .section-title-area .section-title-area-top:after {
+        right: 20%;
+    }
+    .section-title-area .section-title-area-top:before {
+        left: 20%;
+    }
+    .section-title-area .section-title-area-top h2:before {
+        font-size: 26px;
+    }
+    .slider-area .big-title {
+        font-size: 30px;
+    }
+    .slider-area .preview-2 .nivo-controlNav {
+        opacity: 0;
+    }
+    .obituary-area .row>div {
+        padding: 0 15px;
+    }
+    .about-us-area .about-us-right {
+        padding: 60px 15px;
+    }
+    .staff-area .staff-left h2 {
+        font-size: 26px;
+    }
+    .staff-area .staff-left {
+        margin-top: 5px;
+    }
+    .contact-area .contact-top ul li:nth-child(2) {
+        margin: 0 30px;
+    }
+    .contact-area .tab-content .contact-address {
+        padding-left: 0;
+    }
+    .contact-area .tab-content .contact-phone-left {
+        padding-right: 0;
+    }
+    .contact-area .tab-content .contact-phone-right {
+        padding-left: 0;
+    }
+    .contact-area .contact-top ul li a {
+        height: 60px;
+        width: 60px;
+    }
+    .contact-area .contact-top ul li a i {
+        font-size: 18px;
+        line-height: 60px;
+    }
+    .inner-our-obituaries-box .media {
+        text-align: center;
+    }
+    .inner-our-obituaries-box .media a {
+        float: none !important;
+    }
+    .inner-our-obituaries-box .media a img {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .bs-example .pagination li:last-child a {
+        margin-left: 0;
+    }
+    .bs-example .pagination li a {
+        margin-bottom: 5px;
+    }
+    .obituary-details-right-bottom {
+        text-align: center;
+    }
+    .obituary-details-right-bottom p {
+        text-align: left;
+    }
+    .obituary-details-right-bottom li {
+        margin-bottom: 30px;
+    }
+    .service-area .sidebar-services>h4,
+    .our-obituaries-area .sidebar-our-obituaries>h4,
+    .online-store-area .sidebar-online-store>h4,
+    .product-details-area .sidebar-product-details>h4 {
+        text-align: center;
+    }
+    .service-area .sidebar-services>h4::after,
+    .our-obituaries-area .sidebar-our-obituaries>h4::after,
+    .online-store-area .sidebar-online-store>h4::after,
+    .product-details-area .sidebar-product-details>h4::after {
+        right: 0;
+        margin: 0 auto;
+    }
+    .services-area .services-box .services-box-on-hover {
+        padding: 45px 15px;
+    }
+    .inner-services-box .media {
+        text-align: center;
+    }
+    .inner-services-box .media a {
+        float: none !important;
+        padding-right: 0;
+    }
+    .inner-services-box .media a i {
+        margin-bottom: 15px;
+    }
+    .product-details-area .inner-product-details .inner-product-details-left ul li {
+        margin: 16px 14px 0 0;
+    }
+    .single-staff-area .single-staff-left .staff-social,
+    .single-staff-area .single-staff-left {
+        text-align: center;
+    }
+    .single-staff-area .single-staff-left .staff-social {
+        margin-top: 30px;
+    }
+    .product-details-area .inner-product-details .product-details-tab-area ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    .product-details-area .inner-product-details .product-details-tab-area {
+        margin-bottom: 30px;
+    }
+    .page-error-area .page-error-top {
+        padding: 60px 0;
+    }
+    .page-error-area .page-error-top h2 {
+        font-size: 100px;
+    }
+    .page-error-area .page-error-top h3 {
+        font-size: 20px;
+    }
+    .obituary-details-area .obituary-tab-area {
+        margin-top: 15px;
+    }
+    .obituary-details-area .obituary-tab-area ul li {
+        width: 100%;
+        margin-bottom: 2px;
+    }
+    .obituary-details-area .obituary-tab-area ul li a {
+        display: block;
+    }
+    .obituary-details-area .obituary-tab-area .tab-content {
+        margin-top: 0;
+        padding: 30px 15px;
+    }
+    .product-details-area .inner-product-details .product-details-tab-area .tab-content {
+        padding: 15px;
+    }
+    .service-area .inner-services .inner-services-box .media .media-body {
+        padding-left: 0;
+    }
+    .service-area .inner-services .inner-services-box {
+        padding: 25px 15px 10px;
+    }
+    .staff-area .staff-right .owl-controls {
+        bottom: -10px;
+    }
+    .contact-area .tab-content .cotact-heading h3 {
+        font-size: 24px;
+    }
+    .page-about-us-area .section-title-area .section-title-area-top h2 {
+        font-size: 26px;
+    }
+    .page-about-us-area .about-us-inner-content h3 {
+        font-size: 22px;
+    }
+    .services-area .owl-theme .owl-controls .owl-page span {
+        width: 29px;
+    }
+    .section-title-area-top h2 {
+        font-size: 26px
+    }
+    .expertise-area .expertise-left h2 {
+        font-size: 26px;
+    }
+    .about-us-area .about-us-right h2 {
+        font-size: 26px;
+    }
+    .obituary-details-area .obituary-tab-area ul li {
+        float: none;
+    }
+    .single-staff-area .single-staff-left span::after {
+        left: -6px;
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .service-area .sidebar-services .newsletter {
+        margin-bottom: 0;
+    }
+    .our-obituaries-area .sidebar-our-obituaries .newsletter-our-obituaries {
+        margin-bottom: 0;
+    }
+    .mobile-menu-area {
+        display: block;
+    }
+    .header-area-top-area {
+        display: none;
+    }
+    .main-header-area {
+        display: none;
+    }
+    .section-title-area {
+        margin-bottom: 40px;
+    }
+    .talk-about-area .section-title-area .section-title-area-top {
+        margin: 0 0 90px;
+    }
+    .section-title-area .section-title-area-top:after {
+        right: 20%;
+    }
+    .section-title-area .section-title-area-top:before {
+        left: 20%;
+    }
+    .section-title-area .section-title-area-top h2:before {
+        font-size: 30px;
+    }
+    .services-area .services-box .services-box-on-hover {
+        padding: 15px;
+    }
+    .page-about-us-area .section-title-area .section-title-area-top h2 {
+        font-size: 20px;
+    }
+    .contact-area .tab-content .cotact-heading h3 {
+        font-size: 24px;
+    }
+    .product-details-area .inner-product-details .inner-product-details-left ul li {
+        margin: 16px 13px 0 0;
+    }
+    .page-error-area .page-error-top h2 {
+        font-size: 80px;
+    }
+    .page-error-area .page-error-top h3 {
+        font-size: 12px;
+    }
+    .obituary-area .obituary-right .owl-controls {
+        top: -61px;
+    }
+    .what-we-do-area .what-we-do-box {
+        padding: 80px 5px 30px;
+    }
+    .contact-area .tab-content .contact-phone-left li,
+    .contact-area .tab-content .contact-phone-right li {
+        font-size: 12px;
+    }
+    .contact-area .tab-content .contact-phone-left li i {
+        font-size: 18px;
+    }
+    .contact-area .tab-content .contact-phone-right li i {
+        font-size: 18px;
+    }
+    .contact-area .row .col-xs-offset-2 {
+        margin-left: 34px;
+    }
+    .contact-area .tab-content .cotact-heading {
+        padding-bottom: 35px;
+    }
+    .talk-about-area .talk-about-carousel .talk-about-carousel-box {
+        padding: 0 15px;
+    }
+    .our-obituaries-area .inner-our-obituaries .inner-our-obituaries-box .media .media-body {
+        padding-left: 0;
+    }
+    .single-service-inner-page-area .single-service-inner-page .single-service-inner-content .single-service h3 {
+        font-size: 26px;
+    }
+    .banner-area {
+        padding: 40px 0;
+    }
+    .partner-area {
+        padding: 64px 0 48px;
+    }
+    .banner-area .banner .breadcumb-area {
+        margin-top: 0;
+    }
+    body {
+        min-width: 100%;
+    }
+}
