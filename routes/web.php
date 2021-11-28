@@ -1,11 +1,13 @@
 <?php
- 
-// use App\Http\Controllers\admin\ContentCOntroller; 
-use App\Http\Controllers\CommonsController; 
+
+// use App\Http\Controllers\admin\ContentCOntroller;
+
+use App\Http\Controllers\admin\AdminAccountController;
+use App\Http\Controllers\CommonsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
- 
+
 Route::get('/', [CommonsController::class, 'index']);
 Route::get('about-us', [CommonsController::class, 'aboutus']);
 Route::get('book-us', [CommonsController::class, 'bookus']);
@@ -21,10 +23,10 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('admin/dashboard', [ContentCOntroller::class, 'index'])->name('admin');
+Route::get('admin/dashboard', [AdminAccountController::class, 'index'])->name('admin');
 
 Route::prefix('admin')->group(function () {
- 
+
 });
 
- 
+
