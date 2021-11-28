@@ -26,10 +26,10 @@
 
             <div class="header-left">
                 <a href="{{ route('admin') }}" class="logo">
-                    <img src="{{ asset('backend/img/logo.png') }}" alt="Logo">
+                    <img src="{{ asset('backend/img/logo-1.png') }}" alt="Logo">
                 </a>
                 <a href="{{ route('admin') }}" class="logo logo-small">
-                    <img src="{{ asset('backend/img/logo-small.png') }}" alt="Logo" width="30" height="30">
+                    <img src="{{ asset('backend/img/logo-1.png') }}" alt="Logo" width="30" height="30">
                 </a>
             </div>
 
@@ -72,7 +72,16 @@
                             </div>
                         </div>
                         <a class="dropdown-item" href="">My Profile</a>
-                        <a class="dropdown-item" href="">Logout</a>
+
+                        <a  class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                            document.getElementById('logout-form-admin').submit();">
+                               {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form-admin" action="{{ route('logout') }}" method="POST"
+                                class="d-none">
+                                @csrf
+                            </form>
                     </div>
                 </li>
 

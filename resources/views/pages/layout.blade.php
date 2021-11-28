@@ -36,7 +36,8 @@
 
     <!-- Nivo Slider CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/lib/custom-slider/css/nivo-slider.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('front-end/lib/custom-slider/css/preview.css') }}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ asset('front-end/lib/custom-slider/css/preview.css') }}" type="text/css"
+        media="screen" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/style.css') }}">
@@ -50,21 +51,23 @@
 
 <body>
     <div class="wrapper-area">
-     
+
         <header>
             <div class="header-area-top-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-sm-12">
                             <div class="header-top-left">
-                                <p><i class="fa fa-trophy" aria-hidden="true"></i>Welcome to Jhon Smith Funeral Services, we have over 12 years of expertise !</p>
+                                <p><i class="fa fa-trophy" aria-hidden="true"></i>Welcome to Jhon Smith Funeral
+                                    Services, we have over 12 years of expertise !</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="header-top-right">
                                 <nav>
                                     <ul>
-                                        <li><i class="fa fa-phone"></i><a href="tel:+1234567890">Call : +123 456 7890</a></li>
+                                        <li><i class="fa fa-phone"></i><a href="tel:+1234567890">Call : +123 456
+                                                7890</a></li>
                                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -82,7 +85,8 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                             <div class="logo-area">
-                                <a href="{{ url('/') }}"><img src="{{ asset('front-end/img/logo.png') }}" alt="logo"></a>
+                                <a href="{{ url('/') }}"><img src="{{ asset('front-end/img/logo.png') }}"
+                                        alt="logo"></a>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -90,8 +94,9 @@
                                 <nav>
                                     <ul>
                                         <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="{{ url('/about-us') }}">About Us</a></li> 
-                                        <li><a href="{{ url('/book-us') }}">Book Today</a></li> 
+                                        <li><a href="#about-us">What we Do</a></li>
+                                        <li><a href="{{ url('/book-us') }}">Book Us</a></li>
+                                        <li><a href="{{ url('/book-us') }}">Mapping</a></li>
                                         <li><a href="{{ url('contact-us') }}">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -102,8 +107,10 @@
                                 <ul>
                                     <li>
                                         <form>
-                                            <input type="text" required="" placeholder="Search...." class="search-form">
-                                            <a class="search-button" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+                                            <input type="text" required="" placeholder="Search...."
+                                                class="search-form">
+                                            <a class="search-button" href="#"><i aria-hidden="true"
+                                                    class="fa fa-search"></i></a>
                                         </form>
                                     </li>
                                     <li class="shoping-bag"> </li>
@@ -122,9 +129,9 @@
                                 <nav id="dropdown">
                                     <ul>
                                         <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="{{ url('/about-us') }}">About Us</a></li> 
-                                        <li><a href="{{ url('/book-us') }}">Book Today</a></li> 
-                                        <li><a href="{{ url('contact-us') }}">Contact</a></li> 
+                                        <li><a href="{{ url('/about-us') }}">About Us</a></li>
+                                        <li><a href="{{ url('/book-us') }}">Book Today</a></li>
+                                        <li><a href="{{ url('contact-us') }}">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -135,25 +142,13 @@
             <!-- mobile-menu-area end -->
         </header>
         <!-- Header Area End Here -->
-    @yield('content')
+        @yield('content')
         <!-- Footer Area Start Here -->
         <footer>
             <div class="footer-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="footer-menu-area">
-                                <nav>
-                                    <ul>
-                                        <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="{{ url('/about-us') }}">About Us</a></li> 
-                                        <li><a href="{{ url('/book-us') }}">Book Today</a></li> 
-                                        <li><a href="{{ url('contact-us') }}">Contact</a></li> 
-                                    </ul>
-                                </nav>
-                               
-                            </div>
-                        </div>
+
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="inner-footer">
                                 <p>Copyright 2021. All Rights Reserved. &nbsp; Designed by<a href="#"> Alecky</a></p>
