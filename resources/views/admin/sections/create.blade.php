@@ -47,7 +47,7 @@
                             </div>
                             <div class="col-12 col-sm-12">
                                 <div class="form-group">
-                                    <label>Slots Available</label>
+                                    <label>Location Description</label>
 
                                         <textarea name="location" id="" cols="30" rows="10" class="form-control">{{ old('location') }}</textarea>
                                     @error('location')

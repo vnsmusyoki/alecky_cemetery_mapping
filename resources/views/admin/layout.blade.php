@@ -73,15 +73,15 @@
                         </div>
                         <a class="dropdown-item" href="">My Profile</a>
 
-                        <a  class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form-admin').submit();">
-                               {{ __('Logout') }}
-                            </a>
+                            {{ __('Logout') }}
+                        </a>
 
-                            <form id="logout-form-admin" action="{{ route('logout') }}" method="POST"
-                                class="d-none">
-                                @csrf
-                            </form>
+                        <form id="logout-form-admin" action="{{ route('logout') }}" method="POST"
+                            class="d-none">
+                            @csrf
+                        </form>
                     </div>
                 </li>
 
@@ -100,16 +100,19 @@
                                 <span>Dashboard</span></a>
                         </li>
                         <li>
-                            <a href="{{ url('admin/managesections') }}"><i class="fas fa-map"></i> <span>All Sections</span></a>
+                            <a href="{{ url('admin/managesections') }}"><i class="fas fa-map"></i> <span>All
+                                    Sections</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-map-marked-alt"></i> <span>Filter Section</span></a>
                         </li>
                         <li>
-                            <a href="{{ url('admin/createsection') }}"><i class="fas fa-map-marked-alt"></i> <span>Add New Section</span></a>
+                            <a href="{{ url('admin/createsection') }}"><i class="fas fa-map-marked-alt"></i>
+                                <span>Add New Section</span></a>
                         </li>
                         <li>
-                            <a href="{{ url('admin/add-new-location') }}"><i class="fas fa-map-pin"></i> <span>Add New Location</span></a>
+                            <a href="{{ url('admin/add-new-location') }}"><i class="fas fa-map-pin"></i> <span>Add
+                                    New Location</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-search-location"></i> <span>Filter Location</span></a>
@@ -128,9 +131,9 @@
                         </li>
                         <li>
 
-                            <a   href="{{ route('logout') }}" onclick="event.preventDefault();
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-                               <i class="fas fa-sign-out-alt"></i> <span>{{ __('Logout') }}</span>
+                                <i class="fas fa-sign-out-alt"></i> <span>{{ __('Logout') }}</span>
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST"
@@ -167,7 +170,7 @@
 
     <script src="{{ asset('backend/plugins/apexchart/apexcharts.min.js') }}"></script>
     <script src="{{ asset('backend/plugins/apexchart/chart-data.js') }}"></script>
-
+    <script src="{{ asset('backend/plugins/datatables/datatables.min.js') }}"></script>
     <script src="{{ asset('backend/js/script.js') }}"></script>
 </body>
 
