@@ -30,6 +30,8 @@ Route::prefix('admin')->group(function () {
     Route::get('managesections', [AdminSectionController::class, 'index']);
     Route::get('createsection', [AdminSectionController::class, 'create']);
     Route::post('storesection', [AdminSectionController::class, 'store']);
+    Route::get('add-new-location', [AdminAccountController::class, 'addnewlocation']);
+    Route::get('storelocations', [AdminAccountController::class, 'storelocations']);
 });
 
 

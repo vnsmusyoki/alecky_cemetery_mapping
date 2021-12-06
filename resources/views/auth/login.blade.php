@@ -34,9 +34,8 @@
                     <div class="card-body p-6">
                         <div class="mb-4 d-flex justify-content-center"
                             style="flex-direction: column;align-items:center;">
-                            <a href="{{ url('/') }}"><img src="{{ asset('assets/images/logo-icon.svg') }}"
-                                    class="mb-4" alt=""></a>
-                            <h1 class="mb-1 fw-bold">Sign in</h1>
+                            <a href="{{ url('/') }}"> <img src="{{ asset('front-end/img/logo.png') }}"
+                                    alt="logo" class="mb-4"></a>
                             <span>Return back to home screen? <a href="{{ url('/') }}" class="ms-1">Click
                                     Here</a></span>
                         </div>
@@ -69,8 +68,7 @@
                             <!-- Checkbox -->
                             <div class="d-lg-flex justify-content-between align-items-center mb-4">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="rememberme">
-                                    <label class="form-check-label " for="rememberme">Remember me</label>
+                                    <label class="form-check-label " for="rememberme"></label>
                                 </div>
                                 <div>
                                     @if (Route::has('password.request'))
@@ -86,26 +84,8 @@
                                 <div class="d-grid">
                                     <button type="submit" class="btn btn-login btn-block">Sign in</button>
                                 </div>
-                            </div>
-                            <hr class="my-4">
-                            <div class="mt-4 text-center">
-                                <!--Facebook-->
-                                <a href="#" class="btn-social btn-social-outline ">
-                                    <i class="bi bi-house"></i>
-                                </a>
-                                <!--Twitter-->
-                                <a href="#" class="btn-social btn-social-outline  ">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <!--LinkedIn-->
-                                <a href="#" class="btn-social btn-social-outline  ">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <!--GitHub-->
-                                <a href="#" class="btn-social btn-social-outline  ">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
-                            </div>
+                            </div> 
+
                         </form>
                     </div>
                 </div>

@@ -109,7 +109,7 @@
                             <a href="{{ url('admin/createsection') }}"><i class="fas fa-map-marked-alt"></i> <span>Add New Section</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-map-pin"></i> <span>Add New Location</span></a>
+                            <a href="{{ url('admin/add-new-location') }}"><i class="fas fa-map-pin"></i> <span>Add New Location</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-search-location"></i> <span>Filter Location</span></a>
