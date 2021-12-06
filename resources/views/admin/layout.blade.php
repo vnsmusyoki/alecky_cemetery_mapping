@@ -100,13 +100,13 @@
                                 <span>Dashboard</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-map"></i> <span>All Sections</span></a>
+                            <a href="{{ url('admin/managesections') }}"><i class="fas fa-map"></i> <span>All Sections</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-map-marked-alt"></i> <span>Filter Section</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-map-marked-alt"></i> <span>Add New Section</span></a>
+                            <a href="{{ url('admin/createsection') }}"><i class="fas fa-map-marked-alt"></i> <span>Add New Section</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-map-pin"></i> <span>Add New Location</span></a>
@@ -145,25 +145,8 @@
 
 
         <div class="page-wrapper">
-            <div class="content container-fluid">
-
-                <div class="page-header">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h3 class="page-title">Welcome Admin!</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item active">Dashboard</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div class="content container-fluid" style="background-color: #4444;">
                 @yield('content')
-
-
-
-
             </div>
 
             <footer>

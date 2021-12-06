@@ -3,6 +3,7 @@
 // use App\Http\Controllers\admin\ContentCOntroller;
 
 use App\Http\Controllers\admin\AdminAccountController;
+use App\Http\Controllers\admin\AdminSectionController;
 use App\Http\Controllers\CommonsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,7 +27,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('admin/dashboard', [AdminAccountController::class, 'index'])->name('admin');
 
 Route::prefix('admin')->group(function () {
-
+    Route::get('managesections', [AdminSectionController::class, 'index']);
+    Route::get('createsection', [AdminSectionController::class, 'create']);
+    Route::post('storesection', [AdminSectionController::class, 'store']);
 });
 
 
