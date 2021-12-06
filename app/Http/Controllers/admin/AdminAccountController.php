@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Deceased;
 use App\Models\MapLocation;
 use App\Models\MapSection;
 use Illuminate\Http\Request;
@@ -12,7 +13,10 @@ class AdminAccountController extends Controller
 {
     public function index()
     {
-        return view('admin.dashboard');
+        $deceased = Deceased::all();
+        $locations = MapLocation::all();
+        $sections = MapSection::all();
+        return view('admin.dashboard', compact(['sections', 'locations', 'deceased']));
     }
     public function addnewlocation()
     {
@@ -48,5 +52,38 @@ class AdminAccountController extends Controller
     {
         $locations = MapLocation::all();
         return view('admin.locations.all-locations', compact('locations'));
+    }
+    public function adddeceased()
+    {
+        $locations = MapLocation::where('status', 'available')->get();
+        return view('admin.deceased.create-deceased', compact('locations'));
+    }
+    public function storedeceased(Request $request)
+    {
+
+        $this->validate($request, [
+            'full_names' => 'required|string|max:191',
+            'location_assigned' => 'required',
+            'next_kin_full_names' => 'required|string',
+            'next_kin_phone_number' => 'required|digits:10',
+            'deceased_home_location' => 'required|string',
+            'picture' => 'required|image|mimes:jpeg,png,jpg|max:6048'
+        ]);
+
+        $deceased = new Deceased;
+        $deceased->full_names = $request->input('full_names');
+        $deceased->location_assigned = $request->input('location_assigned');
+        $deceased->next_kin_full_names = $request->input('next_kin_full_names');
+        $deceased->next_kin_phone_number = $request->input('next_kin_phone_number');
+        $deceased->deceased_home_location = $request->input('deceased_home_location');
+        $fileNameWithExt = $request->picture->getClientOriginalName();
+        $fileName =  pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+        $Extension = $request->picture->getClientOriginalExtension();
+        $filenameToStore = $fileName . '-' . time() . '.' . $Extension;
+        $path = $request->picture->storeAs('pictures', $filenameToStore, 'public');
+        $deceased->picture = $filenameToStore;
+        $deceased->save();
+        Toastr::success('Deceased details added successfully.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->to('admin/dashboard');
     }
 }

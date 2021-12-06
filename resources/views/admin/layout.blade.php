@@ -127,7 +127,8 @@
                             <a href="#"><i class="fas fa-search-plus"></i> <span>Filter Deceased</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-users"></i> <span>Manage Deceased</span></a>
+                            <a href="{{ url('admin/add-deceased') }}"><i class="fas fa-users"></i> <span>Add
+                                    Deceased</span></a>
                         </li>
                         <li>
 

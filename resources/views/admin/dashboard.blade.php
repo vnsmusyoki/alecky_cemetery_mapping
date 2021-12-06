@@ -19,7 +19,7 @@
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <div class="db-info">
-                        <h3>50055</h3>
+                        <h3>{{ $deceased->count() }}</h3>
                         <h6>Deceased</h6>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         <i class="fas fa-crown"></i>
                     </div>
                     <div class="db-info">
-                        <h3>50+</h3>
+                        <h3>{{ $locations->count() }}</h3>
                         <h6>Locations</h6>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         <i class="fas fa-building"></i>
                     </div>
                     <div class="db-info">
-                        <h3>30+</h3>
+                        <h3>{{ $sections->count() }}</h3>
                         <h6>Sections</h6>
                     </div>
                 </div>

@@ -33,4 +33,6 @@ Route::prefix('admin')->group(function () {
     Route::get('add-new-location', [AdminAccountController::class, 'addnewlocation']);
     Route::post('storelocations', [AdminAccountController::class, 'storelocations']);
     Route::get('all-locations', [AdminAccountController::class, 'alllocations']);
+    Route::get('add-deceased', [AdminAccountController::class, 'adddeceased']);
+    Route::post('storedeceased', [AdminAccountController::class, 'storedeceased']);
 });
