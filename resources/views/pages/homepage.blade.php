@@ -24,14 +24,7 @@
 
                         </div>
                     </div>
-                    <div data-wow-delay="0.4s" data-wow-duration="4s" class="button">
-                        <ul class="slider-read-more">
-                            <li><a href="#" class="btn btn-success">Read more<i class="fa fa-arrow-circle-right"
-                                        aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="btn btn-success">Get Qute<i class="fa fa-arrow-circle-right"
-                                        aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <!-- direction 2 -->
@@ -45,19 +38,10 @@
                         </div>
                         <div data-wow-delay="0.3s" data-wow-duration="3s"
                             class="tp-caption slider-content-text-area small-content customin customout rs-title-small bg-sld-cp-primary tp-resizeme">
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever sinceIt has survived not only
-                                five centuries, but also the leap into electronic.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                            <p>We honour and care for our loved ones who die by  ensuring they will never be forgotten. Funded by six Member Governments, our work began with building, and now maintaining, cemeteries at 23,000 locations all over the world.</p>
+                                 </div>
                     </div>
-                    <div data-wow-delay="0.4s" data-wow-duration="4s" class="button">
-                        <ul class="slider-read-more">
-                            <li><a href="#" class="btn btn-success">Read more<i class="fa fa-arrow-circle-right"
-                                        aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="btn btn-success">Get Qute<i class="fa fa-arrow-circle-right"
-                                        aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <!-- direction 3 -->
@@ -71,19 +55,10 @@
                         </div>
                         <div data-wow-delay="0.3s" data-wow-duration="3s"
                             class="tp-caption slider-content-text-area small-content customin customout rs-title-small bg-sld-cp-primary tp-resizeme">
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever sinceIt has survived not only
-                                five centuries, but also the leap into electronic.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                            <p>We honour and care for our loved ones who die by  ensuring they will never be forgotten. Funded by six Member Governments, our work began with building, and now maintaining, cemeteries at 23,000 locations all over the world.</p>
+                               </div>
                     </div>
-                    <div data-wow-delay="0.4s" data-wow-duration="4s" class="button">
-                        <ul class="slider-read-more">
-                            <li><a href="#" class="btn btn-success">Read more<i class="fa fa-arrow-circle-right"
-                                        aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="btn btn-success">Get Qute<i class="fa fa-arrow-circle-right"
-                                        aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -96,7 +71,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="obituary-left">
                         <h3>Recent Obituaries</h3>
-                        <p>Simply dummy text of the printing and typ esetting industry. </p>
+                         
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
@@ -314,7 +289,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Plan Ahead</a></h3>
-                         
+
                         </div>
                         <img src="{{ asset('front-end/img/services/1.jpg') }}" alt="services1">
                         <h3>Plan Ahead</h3>
