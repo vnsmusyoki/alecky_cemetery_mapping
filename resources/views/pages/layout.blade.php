@@ -95,10 +95,10 @@
                                     <ul>
                                         <li class="active"><a href="{{ url('/') }}">Home</a></li>
                                         <li><a href="#about-us">What we Do</a></li>
-                                        <li><a href="{{ url('/book-us') }}">Book Us</a></li>
-                                        <li><a href="{{ url('/book-us') }}">Mapping</a></li>
+                                        <li><a href="#book-us">Book Us</a></li>
+                                        <li><a href="{{ url('/search-cemetery') }}">Search Cemetery</a></li>
                                         <li><a href="{{ url('contact-us') }}">Contact</a></li>
-                                        <li><a href="{{ route('login') }}">Admin Login</a></li>
+                                        <li><a href="{{ route('login') }}">Login</a></li>
                                     </ul>
                                 </nav>
                             </div>

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [CommonsController::class, 'index']);
-Route::get('about-us', [CommonsController::class, 'aboutus']);
+Route::get('search-cemetery', [CommonsController::class, 'searchcemetery']);
 Route::get('book-us', [CommonsController::class, 'bookus']);
 Route::get('contact-us', [CommonsController::class, 'contactus']);
 Route::get('/logoutchecked', function (Request $request) {

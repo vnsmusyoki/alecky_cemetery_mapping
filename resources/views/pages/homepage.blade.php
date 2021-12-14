@@ -20,9 +20,8 @@
                         </div>
                         <div data-wow-delay="0.3s" data-wow-duration="3s"
                             class="tp-caption slider-content-text-area small-content customin customout rs-title-small bg-sld-cp-primary tp-resizeme">
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever sinceIt has survived not only
-                                five centuries, but also the leap into electronic.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>We honour and care for our loved ones who die by  ensuring they will never be forgotten. Funded by six Member Governments, our work began with building, and now maintaining, cemeteries at 23,000 locations all over the world.</p>
+
                         </div>
                     </div>
                     <div data-wow-delay="0.4s" data-wow-duration="4s" class="button">
@@ -181,7 +180,7 @@
     </div>
     <!-- Obituary Area End Here -->
     <!-- What-we-do Area Start Here -->
-    <div class="what-we-do-area section-space">
+    <div class="what-we-do-area section-space" id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -259,7 +258,7 @@
     </div>
     <!-- About us Area End Here -->
     <!-- Our Services Area Start Here -->
-    <div class="services-area section-space">
+    <div class="services-area section-space" id="book-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -268,8 +267,7 @@
                             <span>What We Offer</span>
                             <h2>Our Services</h2>
                         </div>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mol
+                        <p>what we offer
                         </p>
                     </div>
                 </div>
@@ -343,48 +341,7 @@
             </div>
         </div>
     </div>
-    <!-- Talk About Area Start Here -->
-    <div class="talk-about-area section-space">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="section-title-area">
-                        <div class="section-title-area-top">
-                            <span>Our Clients</span>
-                            <h2>Talk About Us</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="talk-about-carousel">
-                    <div class="talk-about-carousel-box">
-                        <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                            to do what you believe is great work. And the only way to do great work is to love what you do.
-                            If you haven't found it yet, keep
-                            Peopeative are the luckiest people.</p>
-                        <h5>Kazi Warner, CEO it</h5>
-                    </div>
-                    <div class="talk-about-carousel-box">
-                        <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                            to do what you believe is great work. And the only way to do great work is to love what you do.
-                            If you haven't found it yet, keep
-                            Peopeative are the luckiest people.</p>
-                        <h5>Kazi Warner, CEO it</h5>
-                    </div>
-                    <div class="talk-about-carousel-box">
-                        <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                            to do what you believe is great work. And the only way to do great work is to love what you do.
-                            If you haven't found it yet, keep
-                            Peopeative are the luckiest people.</p>
-                        <h5>Kazi Warner, CEO it</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Talk About Area End Here -->
-
+  
     <!-- Google Map Integrate Start Here -->
     <div class="google-map-area">
         <div id="googleMap" style="width:100%;height:380px;"></div>

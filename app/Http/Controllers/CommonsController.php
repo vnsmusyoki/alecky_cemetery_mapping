@@ -12,8 +12,8 @@ class CommonsController extends Controller
     public function bookus(){
         return view('pages.book-us');
     }
-    public function aboutus(){
-        return view('pages.about-us');
+    public function searchcemetery(){
+        return view('pages.search-cemetery');
     }
     public function contactus(){
         return view('pages.contact-us');
