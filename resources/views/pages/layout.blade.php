@@ -98,6 +98,7 @@
                                         <li><a href="{{ url('/book-us') }}">Book Us</a></li>
                                         <li><a href="{{ url('/book-us') }}">Mapping</a></li>
                                         <li><a href="{{ url('contact-us') }}">Contact</a></li>
+                                        <li><a href="{{ route('login') }}">Admin Login</a></li>
                                     </ul>
                                 </nav>
                             </div>
