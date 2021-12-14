@@ -53,33 +53,7 @@
     <div class="wrapper-area">
 
         <header>
-            <div class="header-area-top-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="header-top-left">
-                                <p><i class="fa fa-trophy" aria-hidden="true"></i>Welcome to Jhon Smith Funeral
-                                    Services, we have over 12 years of expertise !</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="header-top-right">
-                                <nav>
-                                    <ul>
-                                        <li><i class="fa fa-phone"></i><a href="tel:+1234567890">Call : +123 456
-                                                7890</a></li>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-git" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             
             <div class="main-header-area" id="sticker">
                 <div class="container">
                     <div class="row">

@@ -189,9 +189,7 @@
                             <span>We are Awesome</span>
                             <h2>What We Do</h2>
                         </div>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mol
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -202,8 +200,7 @@
                             <i class="fa fa-pagelines" aria-hidden="true"></i>
                         </div>
                         <h3>Funeral</h3>
-                        <p>Dorem Ipsum is simply dummy text of the printing and typesetting indusIpsum has been theyery
-                            industry's scenturies.</p>
+                        <p>Helping families to celebrate the life and memories of a loved one.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -212,8 +209,7 @@
                             <i class="fa fa-cog" aria-hidden="true"></i>
                         </div>
                         <h3>Cremation</h3>
-                        <p>Dorem Ipsum is simply dummy text of the printing and typesetting indusIpsum has been theyery
-                            industry's scenturies.</p>
+                        <p>Cremation does not limit your options, therefore, our caring staff  will help you arrange any type of service you desire to hold before or after the cremation..</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -222,8 +218,7 @@
                             <i class="fa fa-pagelines" aria-hidden="true"></i>
                         </div>
                         <h3>Cemetery</h3>
-                        <p>Dorem Ipsum is simply dummy text of the printing and typesetting indusIpsum has been theyery
-                            industry's scenturies.</p>
+                        <p>Helping families create truly special & memorable funeral services in Kenya that celebrate life.</p>
                     </div>
                 </div>
             </div>
@@ -242,15 +237,10 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-us-right">
                         <div class="about-us-right-title">
-                            <h2>About us</h2>
+                            <h2>Celebrating lives with dignity</h2>
                         </div>
-                        <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
-                            formas humanitatis per seacula quarta decima et quinta decima. Duis autem vel eum iriure dolor
-                            in hendrerit in vulputate velit esse
-                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                            iusto.
+                        <p>We would be privileged to serve you and your family and share what we have learnt  in over 30  years of experience helping other families make arrangements for cremation services in Kenya.
                         </p>
-                        <p>delted.</p>
                     </div>
                 </div>
             </div>
@@ -277,8 +267,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Plan Ahead</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
+
                         </div>
                         <img src="{{ asset('front-end/img/services/1.jpg') }}" alt="services1">
                         <h3>Plan Ahead</h3>
@@ -286,8 +275,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#"> Flower & Gift</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
+
                         </div>
                         <img src="{{ asset('front-end/img/services/2.jpg') }}">
                         <h3>Flower & Gift</h3>
@@ -295,8 +283,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Grief & Healing</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
+
                         </div>
                         <img src="{{ asset('front-end/img/services/3.jpg') }}" alt="services3">
                         <h3>Grief & Healing</h3>
@@ -304,17 +291,14 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Plan Ahead</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
-                        </div>
+                                </div>
                         <img src="{{ asset('front-end/img/services/1.jpg') }}" alt="services1">
                         <h3>Plan Ahead</h3>
                     </div>
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#"> Flower & Gift</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
+
                         </div>
                         <img src="{{ asset('front-end/img/services/2.jpg') }}" alt="services2">
                         <h3>Flower & Gift</h3>
@@ -322,8 +306,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Grief & Healing</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
+
                         </div>
                         <img src="{{ asset('front-end/img/services/3.jpg') }}" alt="services3">
                         <h3>Grief & Healing</h3>
@@ -331,8 +314,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Plan Ahead</a></h3>
-                            <p>Dorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                been the industry.</p>
+                         
                         </div>
                         <img src="{{ asset('front-end/img/services/1.jpg') }}" alt="services1">
                         <h3>Plan Ahead</h3>
@@ -341,7 +323,7 @@
             </div>
         </div>
     </div>
-  
+
     <!-- Google Map Integrate Start Here -->
     <div class="google-map-area">
         <div id="googleMap" style="width:100%;height:380px;"></div>

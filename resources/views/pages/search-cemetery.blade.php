@@ -18,17 +18,17 @@
                     <fieldset>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <input type="text" placeholder="Name*" class="form-control">
+                                <input type="text" placeholder="First Name*" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <input type="email" placeholder="Email*" class="form-control">
+                                <input type="text" placeholder="Last Name*" class="form-control">
                             </div>
-                        </div> 
+                        </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="form-group">
-                                <button type="submit" class="btn send-btn">Send Message</button>
+                                <button type="submit" class="btn send-btn">Search Now</button>
                             </div>
                         </div>
                     </fieldset>
