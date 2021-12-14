@@ -245,7 +245,11 @@
                         <div class="about-us-right-title">
                             <h2>About us</h2>
                         </div>
-                        <p>content deleted
+                        <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
+                            formas humanitatis per seacula quarta decima et quinta decima. Duis autem vel eum iriure dolor
+                            in hendrerit in vulputate velit esse
+                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                            iusto.
                         </p>
                         <p>delted.</p>
                     </div>
