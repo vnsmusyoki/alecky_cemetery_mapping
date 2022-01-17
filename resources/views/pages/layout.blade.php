@@ -7,71 +7,43 @@
     <title>Welcome | @yield('title') </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-
     <!-- normalize CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/animate.min.css') }}">
-
     <!-- main CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/main.css') }}">
-
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/bootstrap.min.css') }}">
-
     <!-- Animate CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/animate.min.css') }}">
-
     <!-- font-awesome CSS-->
     <link rel="stylesheet" href="{{ asset('front-end/css/font-awesome.min.css') }}">
-
     <!-- Owl Caousel CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('front-end/css/owl.theme.css') }}">
     <link rel="stylesheet" href="{{ asset('front-end/css/owl.transitions.css') }}">
-
     <!-- main menu CSS-->
     <link rel="stylesheet" href="{{ asset('front-end/css/meanmenu.min.css') }}">
-
     <!-- Nivo Slider CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/lib/custom-slider/css/nivo-slider.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('front-end/lib/custom-slider/css/preview.css') }}" type="text/css"
         media="screen" />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/style.css') }}">
-
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/responsive.css') }}">
 
-    <!-- Modernizr js -->
-    <script src="{{ asset('front-end/js/vendor/modernizr-2.8.3.min.js') }}"></script>
-    <script src="{{ asset('front-end/js/plugins.js') }}"></script>
 
-    <!-- Bootstrap Js-->
-    <script src="{{ asset('front-end/js/bootstrap.min.js') }}"></script>
-    <!-- WOW JS -->
-    <script src="{{ asset('front-end/js/wow.min.js') }}"></script>
-    <!-- Owl Cauosel JS -->
-    <script src="{{ asset('front-end/js/owl.carousel.min.js') }}"></script>
-    <!-- Meanmenu Js -->
-    <script src="{{ asset('front-end/js/jquery.meanmenu.min.js') }}"></script>
-    <!-- Nivo slider js-->
-    <script src="{{ asset('front-end/lib/custom-slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('front-end/lib/custom-slider/home.js') }}" type="text/javascript"></script>
-    <!-- jQuery Srollup -->
-    <script src="{{ asset('front-end/js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
-    <!-- jQuery Zoom -->
-    <script src="{{ asset('front-end/js/jquery.zoom.min.js') }}"></script>
+
     <!-- Custom Js -->
-    <script src="{{ asset('front-end/js/main.js') }}"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://maps.google.com/maps/api/js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
     <style type="text/css">
         #mymap {
-            
+
             width: 100%;
             height: 500px;
         }
@@ -166,7 +138,27 @@
         <!-- Footer Area End Here -->
     </div>
 
+    <!-- Bootstrap Js-->
+    <script src="{{ asset('front-end/js/bootstrap.min.js') }}"></script>
+    <!-- WOW JS -->
+    <script src="{{ asset('front-end/js/wow.min.js') }}"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="{{ asset('front-end/js/owl.carousel.min.js') }}"></script>
+    <!-- Meanmenu Js -->
+    <script src="{{ asset('front-end/js/jquery.meanmenu.min.js') }}"></script>
 
+    <!-- Nivo slider js-->
+    <script src="{{ asset('front-end/lib/custom-slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('front-end/lib/custom-slider/home.js') }}" type="text/javascript"></script>
+    <!-- jQuery Srollup -->
+    <script src="{{ asset('front-end/js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
+    <!-- jQuery Zoom -->
+    <script src="{{ asset('front-end/js/jquery.zoom.min.js') }}"></script>
+
+    <!-- Modernizr js -->
+    <script src="{{ asset('front-end/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <script src="{{ asset('front-end/js/plugins.js') }}"></script>
+    <script src="{{ asset('front-end/js/main.js') }}"></script>
     <script type="text/javascript">
         var locations = <?php print_r(json_encode($locations)); ?>;
         var mymap = new GMaps({

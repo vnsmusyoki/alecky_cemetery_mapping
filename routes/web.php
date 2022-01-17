@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [CommonsController::class, 'index']);
 Route::get('search-cemetery', [CommonsController::class, 'searchcemetery']);
 Route::get('book-us', [CommonsController::class, 'bookus']);
+Route::post('search-grave', [CommonsController::class, 'searchgrave']);
+Route::post('search-results-list/{name}', [CommonsController::class, 'searchgraveresults']);
 Route::get('contact-us', [CommonsController::class, 'contactus']);
 Route::get('/logoutchecked', function (Request $request) {
     $request->session()->flush();

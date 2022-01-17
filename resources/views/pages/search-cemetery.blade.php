@@ -14,16 +14,23 @@
                 </div>
             </div>
             <div class="row">
-                <form>
+                <form method="POST" action="{{ url('search-grave') }}">
+                    @csrf
                     <fieldset>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <input type="text" placeholder="First Name*" class="form-control">
+                                <input type="text" placeholder="First Name*" class="form-control" name="firstname">
+                                @error('firstname')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <input type="text" placeholder="Last Name*" class="form-control">
+                                <input type="text" placeholder="Last Name*" class="form-control" name="lastname">
+                                @error('lastname')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
