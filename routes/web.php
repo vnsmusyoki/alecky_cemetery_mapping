@@ -23,6 +23,7 @@ Route::get('/logoutchecked', function (Request $request) {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/cemetery/{deceased}', [CommonsController::class, 'deceaseddetails']);
 
 Route::get('admin/dashboard', [AdminAccountController::class, 'index'])->name('admin');
 
@@ -36,3 +37,4 @@ Route::prefix('admin')->group(function () {
     Route::get('add-deceased', [AdminAccountController::class, 'adddeceased']);
     Route::post('storedeceased', [AdminAccountController::class, 'storedeceased']);
 });
+// https://www.itsolutionstuff.com/post/laravel-5-multiple-markers-in-google-map-using-gmapsjsexample.html

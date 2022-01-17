@@ -47,13 +47,43 @@
 
     <!-- Modernizr js -->
     <script src="{{ asset('front-end/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <script src="{{ asset('front-end/js/plugins.js') }}"></script>
+
+    <!-- Bootstrap Js-->
+    <script src="{{ asset('front-end/js/bootstrap.min.js') }}"></script>
+    <!-- WOW JS -->
+    <script src="{{ asset('front-end/js/wow.min.js') }}"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="{{ asset('front-end/js/owl.carousel.min.js') }}"></script>
+    <!-- Meanmenu Js -->
+    <script src="{{ asset('front-end/js/jquery.meanmenu.min.js') }}"></script>
+    <!-- Nivo slider js-->
+    <script src="{{ asset('front-end/lib/custom-slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('front-end/lib/custom-slider/home.js') }}" type="text/javascript"></script>
+    <!-- jQuery Srollup -->
+    <script src="{{ asset('front-end/js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
+    <!-- jQuery Zoom -->
+    <script src="{{ asset('front-end/js/jquery.zoom.min.js') }}"></script>
+    <!-- Custom Js -->
+    <script src="{{ asset('front-end/js/main.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
+    <style type="text/css">
+        #mymap {
+            
+            width: 100%;
+            height: 500px;
+        }
+
+    </style>
 </head>
 
 <body>
     <div class="wrapper-area">
 
         <header>
-             
+
             <div class="main-header-area" id="sticker">
                 <div class="container">
                     <div class="row">
@@ -135,60 +165,30 @@
         </footer>
         <!-- Footer Area End Here -->
     </div>
-    <!-- Preloader Start Here -->
-    <div id="preloader"></div>
-    <!-- Preloader End Here -->
-    <!-- jquery-->
-    <script src="{{ asset('front-end/js/vendor/jquery-1.12.0.min.js') }}"></script>
 
-    <!-- Plugins Js-->
-    <script src="{{ asset('front-end/js/plugins.js') }}"></script>
 
-    <!-- Bootstrap Js-->
-    <script src="{{ asset('front-end/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript">
+        var locations = <?php print_r(json_encode($locations)); ?>;
+        var mymap = new GMaps({
+            el: '#mymap',
+            lat: 0.1617,
+            lng: 37.7464,
+            zoom: 8
+        });
+        $.each(locations, function(index, value) {
+            mymap.addMarker({
+                lat: value.latitude,
+                lng: value.longitude,
+                title: value.full_names,
+                click: function(e) {
 
-    <!-- WOW JS -->
-    <script src="{{ asset('front-end/js/wow.min.js') }}"></script>
 
-    <!-- Owl Cauosel JS -->
-    <script src="{{ asset('front-end/js/owl.carousel.min.js') }}"></script>
-
-    <!-- Meanmenu Js -->
-    <script src="{{ asset('front-end/js/jquery.meanmenu.min.js') }}"></script>
-
-    <!-- Nivo slider js-->
-    <script src="{{ asset('front-end/lib/custom-slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('front-end/lib/custom-slider/home.js') }}" type="text/javascript"></script>
-
-    <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var mapOptions = {
-                zoom: 15,
-                scrollwheel: false,
-                center: new google.maps.LatLng(-37.81618, 144.95692)
-            };
-            var map = new google.maps.Map(document.getElementById('googleMap'),
-                mapOptions);
-            var marker = new google.maps.Marker({
-                position: map.getCenter(),
-                animation: google.maps.Animation.BOUNCE,
-                icon: 'img/map-marker.png',
-                map: map
+                    window.location.href = 'cemetery/' + value.cemetery_id + '';
+                }
             });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
+        });
     </script>
 
-    <!-- jQuery Srollup -->
-    <script src="{{ asset('front-end/js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
-
-    <!-- jQuery Zoom -->
-    <script src="{{ asset('front-end/js/jquery.zoom.min.js') }}"></script>
-
-    <!-- Custom Js -->
-    <script src="{{ asset('front-end/js/main.js') }}"></script>
 </body>
 
 </html>

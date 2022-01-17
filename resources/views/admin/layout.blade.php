@@ -151,6 +151,7 @@
         <div class="page-wrapper">
             <div class="content container-fluid" style="background-color: #4444;">
                 @yield('content')
+                @yield('scripts')
             </div>
 
             <footer>

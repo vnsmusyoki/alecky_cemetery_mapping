@@ -16,11 +16,13 @@ class CreateDeceasedsTable extends Migration
         Schema::create('deceaseds', function (Blueprint $table) {
             $table->id();
             $table->string('full_names');
-            $table->string('location_assigned');
+            $table->decimal('latitude', 5, 2)->nullable()->default(123.45);
+            $table->decimal('longitude', 5, 2)->nullable()->default(123.45);
             $table->string('next_kin_full_names');
             $table->string('next_kin_phone_number');
-            $table->string('deceased_home_location');
+            $table->string('burial_date');
             $table->string('picture');
+            $table->longText('eulogy');
             $table->timestamps();
         });
     }

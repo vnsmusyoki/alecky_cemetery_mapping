@@ -1,8 +1,8 @@
 @extends('pages.layout')
 @section('title', 'Homepage')
 @section('content')
-     <!-- Slider Area Start Here-->
-     <div class="slider-area">
+    <!-- Slider Area Start Here-->
+    <div class="slider-area">
         <div class="bend niceties preview-2">
             <div id="ensign-nivoslider" class="slides">
                 <img src="{{ asset('front-end/img/slides/slide1.jpg') }}" alt="slide1" title="#slider-direction-1" />
@@ -298,6 +298,7 @@
                     <div class="services-box">
                         <div class="services-box-on-hover">
                             <h3><a href="#">Plan Ahead</a></h3>
+
                         </div>
                         <img src="{{ asset('front-end/img/services/1.jpg') }}" alt="services1">
                         <h3>Plan Ahead</h3>
@@ -307,8 +308,34 @@
         </div>
     </div>
 
-    <div id="mymap"></div>
+    <!-- Google Map Integrate Start Here -->
+    <div>
+        <div id="mymap" style="width:100%;height:500px;"></div>
+
+        <script type="text/javascript">
+          var locations = <?php json_encode($locations) ?>;
+            alert("welcome");
+            var mymap = new GMaps({
+                el: '#mymap',
+                lat: 0.325786,
+                lng: 37.638976,
+                zoom: 6
+            });
 
 
 
+            $.each(locations, function(index, value) {
+                mymap.addMarker({
+                    lat: value.latitude,
+                    lng: value.longitude
+                    title: value.full_names,
+                    click: function(e) {
+                        alert('This is ' + value.full_names + ', gujarat from India.');
+                    }
+                });
+            });
+        </script>
+
+    </div>
+    <!-- Google Map Integrate End Here -->
 @endsection

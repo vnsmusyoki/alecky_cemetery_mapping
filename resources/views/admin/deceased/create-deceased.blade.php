@@ -17,11 +17,12 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ url('admin/storedeceased') }}" method="POST" autocomplete="off" enctype="multipart/form-data">
+                    <form action="{{ url('admin/storedeceased') }}" method="POST" autocomplete="off"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-12">
-                                <h5 class="form-title"><span>deceased Details</span></h5>
+                                <h5 class="form-title"><span>Deceased Details</span></h5>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
@@ -36,14 +37,9 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label>Available Sections</label>
-                                    <select name="location_assigned" id="" class="form-control">
-                                        <option value="">select</option>
-                                        @foreach ($locations as $location)
-                                            <option value="{{ $location->location_id }}">{{ $location->location_id }} -
-                                                {{ $location->locationsection->section_name }}</option>
-                                        @endforeach
-                                    </select>
-                                    @error('location_assigned')
+                                    <input type="date" class="form-control" name="burial_date"
+                                        value="{{ old('burial_date') }}">
+                                    @error('burial_date')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -68,6 +64,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
+
                                 <div class="form-group">
                                     <label>Next of Kin Phone Number</label>
                                     <input type="number" min="1" class="form-control" name="next_kin_phone_number"
@@ -77,19 +74,47 @@
                                     @enderror
                                 </div>
                             </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Latitude</label>
+                                            <input type="number" min="0.3557" max="5" class="form-control" name="latitude" step="any"
+                                                value="{{ old('latitude') }}">
+                                            @error('latitude')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Longitude</label>
+                                            <input type="number" min="37.009" max="45" class="form-control" name="longitude" step="any"
+                                                value="{{ old('longitude') }}">
+                                            @error('longitude')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
 
                             <div class="col-12 col-sm-12">
                                 <div class="form-group">
-                                    <label>Deceased Home Location Address</label>
-                                    <textarea name="deceased_home_location" id="" cols="30" rows="10"
-                                        class="form-control">{{ old('deceased_home_location') }}</textarea>
-                                    @error('deceased_home_location')
+                                    <label>Euology</label>
+                                    <textarea name="eulogy" id="" cols="30" rows="10"
+                                        class="form-control">{{ old('eulogy') }}</textarea>
+                                    @error('eulogy')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                             </div>
+
                             <div class="col-12">
-                                <button type="submit" class="btn btn-info btn-rounded">Submit New Location</button>
+                                <button type="submit" class="btn btn-info btn-rounded">Submit New Details</button>
                             </div>
                         </div>
                     </form>
@@ -98,3 +123,4 @@
         </div>
     </div>
 @endsection
+
