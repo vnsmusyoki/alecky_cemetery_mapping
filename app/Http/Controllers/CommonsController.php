@@ -36,14 +36,14 @@ class CommonsController extends Controller
 
         $fullname = $firstname . " " . $lastname;
 
-        $users = DB::table('deceaseds')->where('title', 'LIKE', "%{$fullname}%")->get();
 
         return redirect('search-results-list/' . $fullname);
     }
     public function searchgraveresults($name)
     {
-        $users = DB::table('deceaseds')->where('title', 'LIKE', "%{$name}%")->get();
-        return view('search-results-list', compact('users', 'name'));
+        $locations = Deceased::all();
+        $users = DB::table('deceaseds')->where('full_names', 'LIKE', "%{$name}%")->get();
+        return view('pages.search-results-list', compact('users', 'name', 'locations'));
     }
     public function contactus()
     {
@@ -53,5 +53,13 @@ class CommonsController extends Controller
     {
         $user = Deceased::where('cemetery_id', $deceased)->get()->first();
         return view('pages.deceased-details', compact('user'));
+    }
+    public function cemeterydetails($name)
+    {
+        $user = Deceased::where('cemetery_id', $name)->get()->first();
+        // $locations = Deceased::all();
+        $locations = Deceased::where('cemetery_id', $name)->get();
+        // dd($locations);
+        return view('pages.deceased-details', compact(['user', 'locations']));
     }
 }

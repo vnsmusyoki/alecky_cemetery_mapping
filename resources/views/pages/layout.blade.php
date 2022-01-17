@@ -159,27 +159,7 @@
     <script src="{{ asset('front-end/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     <script src="{{ asset('front-end/js/plugins.js') }}"></script>
     <script src="{{ asset('front-end/js/main.js') }}"></script>
-    <script type="text/javascript">
-        var locations = <?php print_r(json_encode($locations)); ?>;
-        var mymap = new GMaps({
-            el: '#mymap',
-            lat: 0.1617,
-            lng: 37.7464,
-            zoom: 8
-        });
-        $.each(locations, function(index, value) {
-            mymap.addMarker({
-                lat: value.latitude,
-                lng: value.longitude,
-                title: value.full_names,
-                click: function(e) {
-
-
-                    window.location.href = 'cemetery/' + value.cemetery_id + '';
-                }
-            });
-        });
-    </script>
+    
 
 </body>
 

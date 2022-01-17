@@ -13,7 +13,8 @@ Route::get('/', [CommonsController::class, 'index']);
 Route::get('search-cemetery', [CommonsController::class, 'searchcemetery']);
 Route::get('book-us', [CommonsController::class, 'bookus']);
 Route::post('search-grave', [CommonsController::class, 'searchgrave']);
-Route::post('search-results-list/{name}', [CommonsController::class, 'searchgraveresults']);
+Route::get('search-results-list/{name}', [CommonsController::class, 'searchgraveresults']);
+Route::get('cemetery/{name}', [CommonsController::class, 'cemeterydetails']);
 Route::get('contact-us', [CommonsController::class, 'contactus']);
 Route::get('/logoutchecked', function (Request $request) {
     $request->session()->flush();

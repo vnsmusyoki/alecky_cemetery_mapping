@@ -83,7 +83,8 @@
                                 <img src="{{ asset('storage/pictures/' . $user->picture) }}" alt="obituary1"
                                     class="img-responsive">
                                 <div class="obituary-right-box-content">
-                                    <h4><a href="{{ url('cemetery/'.$user->cemetery_id) }}">{{ $user->full_names }}</a></h4>
+                                    <h4><a href="{{ url('cemetery/' . $user->cemetery_id) }}">{{ $user->full_names }}</a>
+                                    </h4>
                                     <span>{{ $user->burial_date }}</span>
                                 </div>
                             </div>
@@ -245,6 +246,26 @@
 
     <div id="mymap"></div>
 
+    <script type="text/javascript">
+        var locations = <?php print_r(json_encode($locations)); ?>;
+        var mymap = new GMaps({
+            el: '#mymap',
+            lat: 0.1617,
+            lng: 37.7464,
+            zoom: 8
+        });
+        $.each(locations, function(index, value) {
+            mymap.addMarker({
+                lat: value.latitude,
+                lng: value.longitude,
+                title: value.full_names,
+                click: function(e) {
 
+
+                    window.location.href = 'cemetery/' + value.cemetery_id + '';
+                }
+            });
+        });
+    </script>
 
 @endsection

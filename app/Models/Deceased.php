@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Deceased extends Model
 {
     use HasFactory;
+    protected $dates = ['birth_date', 'death_date'];
 }
