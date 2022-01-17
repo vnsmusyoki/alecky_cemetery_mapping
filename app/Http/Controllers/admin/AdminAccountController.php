@@ -93,4 +93,12 @@ class AdminAccountController extends Controller
         Toastr::success('Deceased details added successfully.', 'Success', ["positionClass" => "toast-top-right"]);
         return redirect()->to('admin/dashboard');
     }
+    public function alldeceased(){
+        $users = Deceased::all();
+        return view('admin.all-deceased', compact('users'));
+    }
+    public function deceasededtails($user){
+        $users = Deceased::findOrFail($user);
+        return view('admin.deceased-details', compact('users'));
+    }
 }

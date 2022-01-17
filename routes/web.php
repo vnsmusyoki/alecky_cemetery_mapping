@@ -32,11 +32,11 @@ Route::get('/cemetery/{deceased}', [CommonsController::class, 'deceaseddetails']
 Route::get('admin/dashboard', [AdminAccountController::class, 'index'])->name('admin');
 
 Route::prefix('admin')->group(function () {
-    Route::get('managesections', [AdminSectionController::class, 'index']);
+    Route::get('all-deceased', [AdminAccountController::class, 'alldeceased']);
     Route::get('createsection', [AdminSectionController::class, 'create']);
     Route::post('storesection', [AdminSectionController::class, 'store']);
     Route::get('add-new-location', [AdminAccountController::class, 'addnewlocation']);
-    Route::post('storelocations', [AdminAccountController::class, 'storelocations']);
+    Route::get('deceased-details/{user}', [AdminAccountController::class, 'deceasededtails']);
     Route::get('all-locations', [AdminAccountController::class, 'alllocations']);
     Route::get('add-deceased', [AdminAccountController::class, 'adddeceased']);
     Route::post('storedeceased', [AdminAccountController::class, 'storedeceased']);

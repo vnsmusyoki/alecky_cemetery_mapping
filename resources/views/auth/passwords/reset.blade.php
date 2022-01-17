@@ -21,7 +21,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend/toastr.min.css') }}">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                     <div class="card-body p-6">
                         <div class="mb-4 d-flex justify-content-center"
                             style="flex-direction: column;align-items:center;">
-                            <a href="{{ url('/') }}"><img src="{{ asset('assets/images/logo-icon.svg') }}"
+                            <a href="{{ url('/') }}"><img src="{{ asset('front-end/img/logo.png') }}"
                                     class="mb-4" alt=""></a>
                             <h1 class="mb-1 fw-bold">Create New Password</h1>
                             <span>Return back to home screen? <a href="{{ url('/') }}" class="ms-1">Click
@@ -49,7 +50,8 @@
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
                                 <input type="email" id="email" class="form-control" name="email"
-                                    placeholder="Enter valid Email address here" value="{{ $email ?? old('email') }}">
+                                    placeholder="Enter valid Email address here"
+                                    value="{{ $email ?? old('email') }}">
                                 @error('email')
                                     <small class="text-danger">
                                         {{ $message }}
@@ -67,8 +69,8 @@
                             </div>
                             <div class="mb-3">
                                 <label for="c-password" class="form-label">Confirm Password</label>
-                                <input type="password" id="c-password" class="form-control" name="password_confirmation"
-                                    placeholder="**************">
+                                <input type="password" id="c-password" class="form-control"
+                                    name="password_confirmation" placeholder="**************">
                                 @error('password')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
@@ -79,25 +81,7 @@
                                     <button type="submit" class="btn btn-login btn-block">Set New Password</button>
                                 </div>
                             </div>
-                            <hr class="my-4">
-                            <div class="mt-4 text-center">
-                                <!--Facebook-->
-                                <a href="#" class="btn-social btn-social-outline ">
-                                    <i class="bi bi-house"></i>
-                                </a>
-                                <!--Twitter-->
-                                <a href="#" class="btn-social btn-social-outline  ">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <!--LinkedIn-->
-                                <a href="#" class="btn-social btn-social-outline  ">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <!--GitHub-->
-                                <a href="#" class="btn-social btn-social-outline  ">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
-                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -108,6 +92,8 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
- 
+<script src="{{ asset('backend/jquery.min.js') }}"></script>
+<script src="{{ asset('backend/toastr.min.js') }}"></script>
+{!! Toastr::message() !!}
 
 </html>

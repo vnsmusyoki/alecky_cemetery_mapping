@@ -33,11 +33,9 @@
     <link rel="stylesheet" href="{{ asset('front-end/style.css') }}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('front-end/css/responsive.css') }}">
-
-
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend/toastr.min.css') }}">
     <!-- Custom Js -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://maps.google.com/maps/api/js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
@@ -159,6 +157,9 @@
     <script src="{{ asset('front-end/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     <script src="{{ asset('front-end/js/plugins.js') }}"></script>
     <script src="{{ asset('front-end/js/main.js') }}"></script>
+    <script src="{{ asset('backend/jquery.min.js') }}"></script>
+    <script src="{{ asset('backend/toastr.min.js') }}"></script>
+    {!! Toastr::message() !!}
 
 
 </body>

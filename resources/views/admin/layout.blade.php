@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" href="{{ asset('backend/img/favicon.png') }}">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap">
 
     <link rel="stylesheet" href="{{ asset('backend/plugins/bootstrap/css/bootstrap.min.css') }}">
 
@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="{{ asset('backend/plugins/fontawesome/css/all.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('backend/toastr.min.css') }}">
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css">
 </head>
 
 <body>
@@ -101,27 +105,11 @@
                         </li>
                         <li>
                             <a href="{{ url('admin/managesections') }}"><i class="fas fa-map"></i> <span>All
-                                    Sections</span></a>
+                                    New Requests</span></a>
                         </li>
+                        
                         <li>
-                            <a href="#"><i class="fas fa-map-marked-alt"></i> <span>Filter Section</span></a>
-                        </li>
-                        <li>
-                            <a href="{{ url('admin/createsection') }}"><i class="fas fa-map-marked-alt"></i>
-                                <span>Add New Section</span></a>
-                        </li>
-                        <li>
-                            <a href="{{ url('admin/add-new-location') }}"><i class="fas fa-map-pin"></i> <span>Add
-                                    New Location</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-search-location"></i> <span>Filter Location</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-location-arrow"></i> <span>Manage Locations</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-atom"></i> <span>All Deceased </span></a>
+                            <a href="{{ url('admin/all-deceased') }}"><i class="fas fa-atom"></i> <span>All Deceased </span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-search-plus"></i> <span>Filter Deceased</span></a>
@@ -174,6 +162,22 @@
     <script src="{{ asset('backend/plugins/apexchart/chart-data.js') }}"></script>
     <script src="{{ asset('backend/plugins/datatables/datatables.min.js') }}"></script>
     <script src="{{ asset('backend/js/script.js') }}"></script>
+    <script src="{{ asset('backend/jquery.min.js') }}"></script>
+    <script src="{{ asset('backend/toastr.min.js') }}"></script>
+    {!! Toastr::message() !!}
+     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.print.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#exampleds').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'print'
+                    ]
+                });
+            });
+        </script>
 </body>
 
 </html>
