@@ -15,7 +15,8 @@ Route::get('book-us', [CommonsController::class, 'bookus']);
 Route::post('search-grave', [CommonsController::class, 'searchgrave']);
 Route::get('search-results-list/{name}', [CommonsController::class, 'searchgraveresults']);
 Route::get('cemetery/{name}', [CommonsController::class, 'cemeterydetails']);
-Route::get('contact-us', [CommonsController::class, 'contactus']);
+Route::post('upload-new-burial', [CommonsController::class, 'uploadburial']);
+Route::get('obituaries', [CommonsController::class, 'obituaries']);
 Route::get('/logoutchecked', function (Request $request) {
     $request->session()->flush();
     Auth::logout();

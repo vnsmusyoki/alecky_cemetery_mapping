@@ -70,10 +70,10 @@
                                 <nav>
                                     <ul>
                                         <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="#about-us">What we Do</a></li>
-                                        <li><a href="#book-us">Book Us</a></li>
+                                        <li><a href="{{ url('/#about-us') }}">What we Do</a></li>
+                                        <li><a href="{{ url('/book-us') }}">Book Us</a></li>
                                         <li><a href="{{ url('/search-cemetery') }}">Search Cemetery</a></li>
-                                        <li><a href="{{ url('contact-us') }}">Contact</a></li>
+                                        <li><a href="{{ url('obituaries') }}">Obituaries</a></li>
                                         <li><a href="{{ route('login') }}">Login</a></li>
                                     </ul>
                                 </nav>
@@ -159,7 +159,7 @@
     <script src="{{ asset('front-end/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     <script src="{{ asset('front-end/js/plugins.js') }}"></script>
     <script src="{{ asset('front-end/js/main.js') }}"></script>
-    
+
 
 </body>
 

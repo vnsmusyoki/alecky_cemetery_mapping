@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Deceased;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Brian2694\Toastr\Facades\Toastr;
 
 class CommonsController extends Controller
 {
@@ -45,9 +47,10 @@ class CommonsController extends Controller
         $users = DB::table('deceaseds')->where('full_names', 'LIKE', "%{$name}%")->get();
         return view('pages.search-results-list', compact('users', 'name', 'locations'));
     }
-    public function contactus()
+    public function obituaries()
     {
-        return view('pages.contact-us');
+        $users = Deceased::all();
+        return view('pages.obituaries', compact('users'));
     }
     public function deceaseddetails($deceased)
     {
@@ -61,5 +64,43 @@ class CommonsController extends Controller
         $locations = Deceased::where('cemetery_id', $name)->get();
         // dd($locations);
         return view('pages.deceased-details', compact(['user', 'locations']));
+    }
+    public function uploadburial(Request $request)
+    {
+        $this->validate($request, [
+            'firstname' => 'required|string|max:191',
+            'other_names' => 'required|string|max:191',
+            'next_kin_names' => 'required|string',
+            'next_phone_number' => 'required|digits:10',
+            'death_cert' => 'required|string|min:7|max:7|unique:deceaseds',
+            'burial_date' => 'required|after_or_equal:death_date',
+            'birth_date' => 'required|before_or_equal:' . Carbon::today(),
+            'death_date' => 'required|after_or_equal:birth_date',
+            'picture' => 'required|image|mimes:jpeg,png,jpg|max:6048',
+            'eulogy' => 'required|string'
+        ]);
+        $fullnames = $request->input('firstname') . " " . $request->input('other_names');
+        $cemeteryid = 10;
+        $str = "1234567890OPUJHBGVFDESWAQZUYTB";
+        $cemetery = substr(str_shuffle($str), 0, $cemeteryid);
+        $deceased = new Deceased;
+        $deceased->full_names = $fullnames;
+        $deceased->eulogy = $request->input('eulogy');
+        $deceased->burial_date = $request->input('burial_date');
+        $deceased->birth_date = $request->input('birth_date');
+        $deceased->death_cert = $request->input('death_cert');
+        $deceased->death_date = $request->input('death_date');
+        $deceased->next_kin_full_names = $request->input('next_kin_names');
+        $deceased->next_kin_phone_number = $request->input('next_phone_number');
+        $fileNameWithExt = $request->picture->getClientOriginalName();
+        $fileName =  pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+        $Extension = $request->picture->getClientOriginalExtension();
+        $filenameToStore = $fileName . '-' . time() . '.' . $Extension;
+        $path = $request->picture->storeAs('pictures', $filenameToStore, 'public');
+        $deceased->picture = $filenameToStore;
+        $deceased->cemetery_id = $cemetery;
+        $deceased->save();
+        Toastr::success('Deceased details added successfully.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->back();
     }
 }

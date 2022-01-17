@@ -1,61 +1,4 @@
-/*--------------------------------------------
 
-Template Name: Petter | Responsive HTML5 Template
-Template URI: https://radiustheme.com/
-Description: Petter | Responsive HTML5 Template which is used for Funeral Services.
-Author: Radius Theme
-Author URI: https://radiustheme.com/
-Version: 1.0
-
-===================    
-CSS INDEX
-===================
-
-01. Theme Default CSS (body, link color, section etc)  
-    01.1 Typography
-    01.2 Helper Classes  
-02. Header Area Start Here
-    02.1 Header Area Top Area Start
-    02.2 Main Header Area Start 
-    02.3 Mobile Menu Area Start 
-03. Slider Area Styling 
-04. Obituary Area Styling
-05. What We Do Area Styling
-06. About Us Area Styling
-07. Our Services Area Styling
-08. Expertise Area Styling 
-09. Staff Area Styling
-10. Talk About Area Styling 
-11. Partner Area Styling 
-12. Contact Area Styling
-13. Footer Area Styling 
-14. About Us Page Styling
-15. Our Obituaries Page Styling 
-16. Obituary Details Page Styling
-17. Services Page Styling
-18. Single Service Page Styling
-19. Online Store Page Styling
-20. Product Details Page Styling
-21. Our Staff Page Styling
-22. Single Staff Page Styling
-23. Contact Us Page Styling 
-24. 404 Error Page Styling 
-25. Other Elements Styling
-    25.1 Inner Page Header Banner Styling
-    25.2 Section Title Styling
-    25.3 Button Styling 
-    25.4 Pagination Styling
-26. ScrollUp Styling
-27. Preloader Styling 
---------------------------------------------*/
-
-/*----------------------------------------
-01. Theme Default CSS (body, link color, section etc)
-/*----------------------------------------*/
-
-/*----------------------------------------
-01.1 Typography
------------------------------------------*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200);
@@ -194,7 +137,7 @@ ul {
 -----------------------------------------*/
 
 /*----------------------------------------
-02.1 Header Area Top Area Start 
+02.1 Header Area Top Area Start
 -----------------------------------------*/
 
 .header-area-top-area {
@@ -250,7 +193,7 @@ ul {
 }
 
 /*-------------------------------------
-02.2 Main Header Area Start 
+02.2 Main Header Area Start
 ---------------------------------------*/
 
 .main-header-area .logo-area {
@@ -620,7 +563,7 @@ ul {
 }
 
 /*-------------------------------------
-03. Slider Area Styling  
+03. Slider Area Styling
 ---------------------------------------*/
 
 .slider-area {
@@ -710,7 +653,7 @@ ul {
 }
 
 /*-------------------------------------
-04. Obituary Area Styling 
+04. Obituary Area Styling
 ---------------------------------------*/
 
 .obituary-area {
@@ -856,7 +799,7 @@ ul {
 }
 
 /*-------------------------------------
-05. What We Do Area Styling 
+05. What We Do Area Styling
 ---------------------------------------*/
 
 .what-we-do-area .what-we-do-box {
@@ -921,7 +864,7 @@ ul {
 }
 
 /*-------------------------------------
-06. About Us Area Styling 
+06. About Us Area Styling
 ---------------------------------------*/
 
 .about-us-area {
@@ -960,7 +903,7 @@ ul {
 }
 
 /*-------------------------------------
-07. Our Services Area Styling 
+07. Our Services Area Styling
 ---------------------------------------*/
 
 .services-area .services-box {
@@ -1050,7 +993,7 @@ ul {
 }
 
 /*-------------------------------------
-08. Expertise Area Styling 
+08. Expertise Area Styling
 ---------------------------------------*/
 
 .expertise-area {
@@ -1079,7 +1022,7 @@ ul {
 }
 
 /*-------------------------------------
-09. Staff Area Styling 
+09. Staff Area Styling
 ---------------------------------------*/
 
 .staff-area {
@@ -1207,7 +1150,7 @@ ul {
 }
 
 /*-------------------------------------
-10. Talk About Area Styling 
+10. Talk About Area Styling
 ---------------------------------------*/
 
 .talk-about-area .section-title-area .section-title-area-top {
@@ -1256,7 +1199,7 @@ ul {
 }
 
 /*-------------------------------------
-11. Partner Area Styling 
+11. Partner Area Styling
 ---------------------------------------*/
 
 .partner-area {
@@ -1350,7 +1293,7 @@ ul {
 }
 
 /*-------------------------------------
-12. Contact Area Styling 
+12. Contact Area Styling
 ---------------------------------------*/
 
 .contact-area .contact-top {
@@ -1541,7 +1484,7 @@ ul {
 }
 
 /*-------------------------------------
-13. Footer Area Styling 
+13. Footer Area Styling
 ---------------------------------------*/
 
 .footer-menu-area ul {
@@ -1592,7 +1535,7 @@ ul {
 }
 
 /*-------------------------------------
-14. About Us Page Styling 
+14. About Us Page Styling
 ---------------------------------------*/
 
 .page-about-us-area .section-title-area {
@@ -1638,7 +1581,7 @@ ul {
 }
 
 /*-------------------------------------
-15. Our Obituaries Page Styling 
+15. Our Obituaries Page Styling
 ---------------------------------------*/
 
 .sidebar-our-obituaries>h3 {
@@ -1866,7 +1809,7 @@ ul {
 }
 
 /*-------------------------------------
-16. Obituary Details Page Styling 
+16. Obituary Details Page Styling
 ---------------------------------------*/
 
 .obituary-details-area .obituary-details-left {
@@ -2074,7 +2017,7 @@ ul {
 }
 
 /*-------------------------------------
-17. Services Page Styling 
+17. Services Page Styling
 ---------------------------------------*/
 
 .service-area .sidebar-services>h3 {
@@ -2337,7 +2280,7 @@ ul {
 }
 
 /*-------------------------------------
-19. Online Store Page Styling 
+19. Online Store Page Styling
 ---------------------------------------*/
 
 .online-store-area .sidebar-online-store>h3 {
@@ -2570,7 +2513,7 @@ ul {
 }
 
 /*-------------------------------------
-20. Product Details Page Styling 
+20. Product Details Page Styling
 ---------------------------------------*/
 
 .product-details-area .sidebar-product-details>h3 {
@@ -2838,7 +2781,7 @@ ul {
 }
 
 /*-------------------------------------
-21. Our Staff Page Styling 
+21. Our Staff Page Styling
 ---------------------------------------*/
 
 .our-staff-area .our-staff-box {
@@ -2938,7 +2881,7 @@ ul {
 }
 
 /*-------------------------------------
-22. Single Staff Page Styling 
+22. Single Staff Page Styling
 ---------------------------------------*/
 
 .single-staff-area .single-staff-left h3 {
@@ -3041,7 +2984,7 @@ ul {
 }
 
 /*-------------------------------------
-23. Contact Us Page Styling 
+23. Contact Us Page Styling
 ---------------------------------------*/
 
 .page-contact-us-area .page-contact-us-left {
@@ -3143,7 +3086,7 @@ ul {
 }
 
 /*-------------------------------------
-24. 404 Error Page Styling 
+24. 404 Error Page Styling
 ---------------------------------------*/
 
 .page-error-area {
@@ -3183,16 +3126,16 @@ ul {
 }
 
 /*-------------------------------------
-25. Other Elements Styling 
+25. Other Elements Styling
 ---------------------------------------*/
 
 /*-------------------------------------
-25.1 Inner Page Header Banner Styling 
+25.1 Inner Page Header Banner Styling
 ---------------------------------------*/
 
 .banner-area {
     position: relative;
-    background: url("img/banner/1.jpg") no-repeat;
+    background: url("img/1.jpg") no-repeat;
     background-size: cover;
     padding: 90px 0;
     background-position: center;
@@ -3254,7 +3197,7 @@ ul {
 }
 
 /*-------------------------------------
-25.2 Section Title Styling 
+25.2 Section Title Styling
 ---------------------------------------*/
 
 .section-title-area {
@@ -3314,7 +3257,7 @@ ul {
 }
 
 /*-------------------------------------
-25.3 Button Styling 
+25.3 Button Styling
 ---------------------------------------*/
 
 .buy-btn {
@@ -3472,7 +3415,7 @@ ul {
 }
 
 /*-------------------------------------
-25.4 Pagination Styling 
+25.4 Pagination Styling
 ---------------------------------------*/
 
 .bs-example .pagination {
@@ -3535,7 +3478,7 @@ ul {
 }
 
 /*-------------------------------------
-26. ScrollUp Styling 
+26. ScrollUp Styling
 ---------------------------------------*/
 
 #scrollUp {
@@ -3566,7 +3509,7 @@ ul {
 }
 
 /*-------------------------------------
-27. Preloader Styling 
+27. Preloader Styling
 ---------------------------------------*/
 
 #preloader {
@@ -3578,4 +3521,30 @@ ul {
     top: 0;
     width: 100%;
     z-index: 9999999;
+}
+form.booknow {
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 8px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px; 
+    padding: 2rem 1rem;
+    -webkit-box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+}
+
+form.booknow h3 {
+    margin-bottom: 1rem;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+form.booknow p {
+    margin-bottom: 1rem;
+}
+
+form.booknow h6 {
+    margin-top: 1rem;
 }

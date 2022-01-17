@@ -1,6 +1,25 @@
 @extends('pages.layout')
 @section('title', 'Book Us')
 @section('content')
+
+<div class="banner-area">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner">
+                    <h2>Search With Full Names </h2>
+                    <div class="breadcumb-area">
+                        <ul>
+                            <li class="breadcumb-parent"><a href="{{ url('/') }}">Home</a><span>/</span></li>
+                            <li class="breadcumb-child">Obituaries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Contact Area Start Here -->
     <div class="contact-area section-space jumbotron">
         <div class="container">
