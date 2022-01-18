@@ -6,9 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\Deceased;
 use App\Models\MapLocation;
 use App\Models\MapSection;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Brian2694\Toastr\Facades\Toastr;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class AdminAccountController extends Controller
 {
@@ -19,9 +21,9 @@ class AdminAccountController extends Controller
     public function index()
     {
         $deceased = Deceased::all();
-        $locations = MapLocation::all();
+        $users = Deceased::where('status', 'waiting ')->get();
         $sections = MapSection::all();
-        return view('admin.dashboard', compact(['sections', 'locations', 'deceased']));
+        return view('admin.dashboard', compact(['sections', 'users', 'deceased']));
     }
     public function addnewlocation()
     {
@@ -135,5 +137,64 @@ class AdminAccountController extends Controller
         $grave->save();
         Toastr::success('Deceased details added successfully.', 'Success', ["positionClass" => "toast-top-right"]);
         return redirect()->to('admin/all-deceased');
+    }
+    public function removedeceased($user)
+    {
+        $grave = Deceased::findOrFail($user);
+        Storage::delete('public/pictures/' . $grave->picture);
+        $grave->delete();
+        Toastr::error('Deceased details deleted successfully.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->to('admin/all-deceased');
+    }
+    public function accountsecurity()
+    {
+        return view('admin.account-security');
+    }
+    public function updatepassword(Request $request)
+    {
+        $this->validate($request, [
+            'password' => 'required|min:8|max:20|confirmed',
+            'password_confirmation' => 'required'
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        $user->password = bcrypt($request->input('password'));
+        $user->save();
+
+        Toastr::success('password has been updated.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->back();
+    }
+    public function updateemail(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email|unique:users',
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        $user->email = $request->input('email');
+        $user->save();
+
+        Toastr::success('Email Address has been updated.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->back();
+    }
+    public function updateavatar(Request $request)
+    {
+        $this->validate($request, [
+            'picture' => 'required|image|mimes:jpeg,png,jpg|max:6048',
+        ]);
+        $user = User::find(auth()->user()->id);
+        Storage::delete('public/profile/' . $user->picture);
+        $fileNameWithExt = $request->picture->getClientOriginalName();
+        $fileName =  pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+        $Extension = $request->picture->getClientOriginalExtension();
+        $filenameToStore = $fileName . '-' . time() . '.' . $Extension;
+        $path = $request->picture->storeAs('profile', $filenameToStore, 'public');
+        $user->picture = $filenameToStore;
+        $user->save();
+
+
+
+        Toastr::success('profile Picture has been updated.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->back();
     }
 }

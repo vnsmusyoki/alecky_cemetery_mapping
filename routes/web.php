@@ -39,7 +39,12 @@ Route::prefix('admin')->group(function () {
     Route::get('deceased-details/{userid}', [AdminAccountController::class, 'deceasededtails']);
     Route::get('all-locations', [AdminAccountController::class, 'alllocations']);
     Route::get('add-deceased', [AdminAccountController::class, 'adddeceased']);
+    Route::get('remove-deceased/{user}', [AdminAccountController::class, 'removedeceased']);
+    Route::get('account-security', [AdminAccountController::class, 'accountsecurity']);
     Route::post('storedeceased', [AdminAccountController::class, 'storedeceased']);
     Route::post('upload-deceased-grave/{user}', [AdminAccountController::class, 'uploadcemetery']);
+    Route::post('update-password', [AdminAccountController::class, 'updatepassword']);
+    Route::post('update-email', [AdminAccountController::class, 'updateemail']);
+    Route::post('update-avatar', [AdminAccountController::class, 'updateavatar']);
 });
 // https://www.itsolutionstuff.com/post/laravel-5-multiple-markers-in-google-map-using-gmapsjsexample.html

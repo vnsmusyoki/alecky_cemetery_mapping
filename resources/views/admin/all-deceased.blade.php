@@ -31,7 +31,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($users as $key=>$user)
+                        @foreach ($users as $key => $user)
                             <tr style="font-size:12px;">
                                 <td>{{ ++$key }}
                                 <td><img src="{{ asset('storage/pictures/' . $user->picture) }}"
@@ -40,12 +40,12 @@
                                 <td>{{ $user->birth_date->format('d/m/Y') }}</td>
                                 <td>{{ $user->death_date->format('d/m/Y') }}</td>
                                 <td>{{ $user->burial_date->format('d/m/Y') }}</td>
-                                <td style="text-transform: uppercase;letter-spacing:2px;font-weight:800;color:green;">{{ $user->death_cert }}</td>
+                                <td style="text-transform: uppercase;letter-spacing:2px;font-weight:800;color:green;">
+                                    {{ $user->death_cert }}</td>
                                 <td>{{ $user->next_kin_full_names }}/ {{ $user->next_kin_phone_number }}</td>
                                 <td>{{ $user->latitude }}, {{ $user->longitude }}</td>
-                                <td><a href="{{ url('admin/deceased-details/'.$user->id) }}">Details</a></td>
+                                <td><a href="{{ url('admin/deceased-details/' . $user->id) }}">Details</a>/ <a href="{{ url('admin/remove-deceased/'.$user->id) }}" class="badge badge-danger">Delete</a></td>
                             </tr>
-
                         @endforeach
                     </tbody>
                 </table>
