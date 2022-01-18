@@ -9,8 +9,13 @@ use App\Models\MapSection;
 use Illuminate\Http\Request;
 use Brian2694\Toastr\Facades\Toastr;
 use Carbon\Carbon;
+
 class AdminAccountController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $deceased = Deceased::all();
@@ -67,9 +72,12 @@ class AdminAccountController extends Controller
             'longitude' => 'required|numeric|min:37|max:45',
             'next_kin_full_names' => 'required|string',
             'next_kin_phone_number' => 'required|digits:10',
-            'burial_date' => 'required|after:'.Carbon::today(),
+            'death_cert' => 'required|string|min:7|max:7|unique:deceaseds',
+            'burial_date' => 'required|after_or_equal:death_date',
+            'birth_date' => 'required|before_or_equal:' . Carbon::today(),
+            'death_date' => 'required|after_or_equal:birth_date',
             'picture' => 'required|image|mimes:jpeg,png,jpg|max:6048',
-            'eulogy'=>'required|string'
+            'eulogy' => 'required|string'
         ]);
         $cemeteryid = 10;
         $str = "1234567890OPUJHBGVFDESWAQZUYTB";
@@ -82,6 +90,10 @@ class AdminAccountController extends Controller
         $deceased->next_kin_phone_number = $request->input('next_kin_phone_number');
         $deceased->latitude = $request->input('latitude');
         $deceased->longitude = $request->input('longitude');
+        $deceased->burial_date = $request->input('burial_date');
+        $deceased->birth_date = $request->input('birth_date');
+        $deceased->death_cert = $request->input('death_cert');
+        $deceased->death_date = $request->input('death_date');
         $fileNameWithExt = $request->picture->getClientOriginalName();
         $fileName =  pathinfo($fileNameWithExt, PATHINFO_FILENAME);
         $Extension = $request->picture->getClientOriginalExtension();
@@ -89,16 +101,39 @@ class AdminAccountController extends Controller
         $path = $request->picture->storeAs('pictures', $filenameToStore, 'public');
         $deceased->picture = $filenameToStore;
         $deceased->cemetery_id = $cemetery;
+        $deceased->status = "confirmed";
         $deceased->save();
         Toastr::success('Deceased details added successfully.', 'Success', ["positionClass" => "toast-top-right"]);
-        return redirect()->to('admin/dashboard');
+        return redirect()->to('admin/all-deceased');
     }
-    public function alldeceased(){
+    public function alldeceased()
+    {
         $users = Deceased::all();
         return view('admin.all-deceased', compact('users'));
     }
-    public function deceasededtails($user){
-        $users = Deceased::findOrFail($user);
-        return view('admin.deceased-details', compact('users'));
+    public function deceasededtails($userid)
+    {
+        $locations = Deceased::findOrFail($userid);
+        $user = Deceased::findOrFail($userid);
+        return view('admin.deceased-details', compact('user', 'locations'));
+    }
+    public function pendingmappings()
+    {
+        $users = Deceased::where('status', 'waiting')->get();
+        return view('admin.new-requests', compact('users'));
+    }
+    public function uploadcemetery(Request $request, $user)
+    {
+        $this->validate($request, [
+            'latitude' => 'required|numeric|min:0.00|max:1.99',
+            'longitude' => 'required|numeric|min:36|max:38.99',
+        ]);
+        $grave = Deceased::findOrFail($user);
+        $grave->latitude = $request->input('latitude');
+        $grave->longitude = $request->input('longitude');
+        $grave->status = "confirmed";
+        $grave->save();
+        Toastr::success('Deceased details added successfully.', 'Success', ["positionClass" => "toast-top-right"]);
+        return redirect()->to('admin/all-deceased');
     }
 }

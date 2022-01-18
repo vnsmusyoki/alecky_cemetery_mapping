@@ -24,7 +24,7 @@
                             <div class="col-12">
                                 <h5 class="form-title"><span>Deceased Details</span></h5>
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12 col-sm-12">
                                 <div class="form-group">
                                     <label>Full Names</label>
                                     <input type="text" class="form-control" name="full_names"
@@ -34,16 +34,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-group">
-                                    <label>Available Sections</label>
-                                    <input type="date" class="form-control" name="burial_date"
-                                        value="{{ old('burial_date') }}">
-                                    @error('burial_date')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-                            </div>
+                             
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label>Picture of deceased</label>
@@ -79,8 +70,8 @@
                                     <div class="col-6 col-sm-6">
                                         <div class="form-group">
                                             <label>Latitude</label>
-                                            <input type="number" min="0.3557" max="5" class="form-control" name="latitude" step="any"
-                                                value="{{ old('latitude') }}">
+                                            <input type="number" min="0.3557" max="5" class="form-control" name="latitude"
+                                                step="any" value="{{ old('latitude') }}">
                                             @error('latitude')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
@@ -89,9 +80,58 @@
                                     <div class="col-12 col-sm-6">
                                         <div class="form-group">
                                             <label>Longitude</label>
-                                            <input type="number" min="37.009" max="45" class="form-control" name="longitude" step="any"
-                                                value="{{ old('longitude') }}">
+                                            <input type="number" min="37.009" max="45" class="form-control"
+                                                name="longitude" step="any" value="{{ old('longitude') }}">
                                             @error('longitude')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-12 col-sm-12">
+
+                                <div class="form-group">
+                                    <label>Death Certifite Number</label>
+                                    <input type="text" class="form-control" name="death_cert"
+                                        value="{{ old('death_cert') }}">
+                                    @error('death_cert')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+
+                                <div class="form-group">
+                                    <label>Date of Burial</label>
+                                    <input type="date" class="form-control" name="burial_date"
+                                        value="{{ old('burial_date') }}">
+                                    @error('burial_date')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Sun Rise</label>
+                                            <input type="date" class="form-control" name="birth_date" step="any"
+                                                value="{{ old('birth_date') }}">
+                                            @error('birth_date')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label>SunSet</label>
+                                            <input type="date" class="form-control" name="death_date" step="any"
+                                                value="{{ old('death_date') }}">
+                                            @error('death_date')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>
@@ -123,4 +163,3 @@
         </div>
     </div>
 @endsection
-

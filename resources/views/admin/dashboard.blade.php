@@ -1,4 +1,5 @@
 @extends('admin.layout')
+@section('title', 'Cemetery Dashboard')
 @section('content')
 <div class="page-header">
     <div class="row">
